@@ -1,0 +1,297 @@
+{
+  "rows": 5000000,
+  "por_detector": {
+    "D1": {
+      "tp": 6,
+      "fn": 0,
+      "fp": 0
+    },
+    "D2": {
+      "tp": 2,
+      "fn": 0,
+      "fp": 0
+    },
+    "D3": {
+      "tp": 2,
+      "fn": 0,
+      "fp": 0
+    },
+    "D0": {
+      "tp": 1,
+      "fn": 0,
+      "fp": 0
+    },
+    "D4": {
+      "tp": 0,
+      "fn": 2,
+      "fp": 0
+    },
+    "D6": {
+      "tp": 0,
+      "fn": 1,
+      "fp": 0
+    }
+  },
+  "tp": [
+    {
+      "defeito": "renda_sentinela",
+      "achado": {
+        "coluna": "renda",
+        "detector": "D1",
+        "tipo": "sentinela_numerica",
+        "valor": -999.0,
+        "massa": 0.0309886,
+        "confianca": 0.97,
+        "evidencia": {
+          "rota": "continua",
+          "gap_ratio": 0.014563,
+          "limiar": 0.005,
+          "vizinho_mais_proximo": 878.09,
+          "distancia": 1877.0900000000001,
+          "escala": 128895.85,
+          "reforcos": [
+            "constante_canonica",
+            "no_minimo"
+          ],
+          "lift": 33526.9,
+          "amplitude_suporte": 128895.85,
+          "ndv": 1081910,
+          "ndv_exato": true
+        },
+        "nota": "ponto isolado: vizinho mais proximo 878.09, a 1.46% da amplitude do suporte (128,896); tratar como ausente afeta 3.10% das linhas"
+      }
+    },
+    {
+      "defeito": "idade_zero",
+      "achado": {
+        "coluna": "idade",
+        "detector": "D1",
+        "tipo": "sentinela_numerica",
+        "valor": 0.0,
+        "massa": 0.011983,
+        "confianca": 0.91,
+        "evidencia": {
+          "rota": "discreta",
+          "gap_ratio": 18.0,
+          "limiar": 8.0,
+          "vizinho_mais_proximo": 18.0,
+          "distancia": 18.0,
+          "escala": 1.0,
+          "reforcos": [
+            "no_minimo"
+          ],
+          "espacamento_mediano": 1.0,
+          "ndv": 79,
+          "quantis_sem_candidato": {
+            "p01": 18.0,
+            "p25": 37.0,
+            "p50": 56.0,
+            "p75": 76.0,
+            "p99": 95.0
+          }
+        },
+        "nota": "ponto isolado: vizinho mais proximo 18.0, a 18x o espacamento tipico entre valores (1); tratar como ausente afeta 1.20% das linhas"
+      }
+    },
+    {
+      "defeito": "dias_pgto_9999",
+      "achado": {
+        "coluna": "dias_desde_ultimo_pgto",
+        "detector": "D1",
+        "tipo": "sentinela_numerica",
+        "valor": 9999.0,
+        "massa": 0.0080226,
+        "confianca": 0.97,
+        "evidencia": {
+          "rota": "discreta",
+          "gap_ratio": 9910.0,
+          "limiar": 8.0,
+          "vizinho_mais_proximo": 89.0,
+          "distancia": 9910.0,
+          "escala": 1.0,
+          "reforcos": [
+            "constante_canonica",
+            "no_maximo"
+          ],
+          "espacamento_mediano": 1.0,
+          "ndv": 91,
+          "quantis_sem_candidato": {
+            "p01": 0.0,
+            "p25": 22.0,
+            "p50": 45.0,
+            "p75": 67.0,
+            "p99": 89.0
+          }
+        },
+        "nota": "ponto isolado: vizinho mais proximo 89.0, a 9,910x o espacamento tipico entre valores (1); tratar como ausente afeta 0.80% das linhas"
+      }
+    },
+    {
+      "defeito": "utilizacao_sentinela_na_margem",
+      "achado": {
+        "coluna": "utilizacao",
+        "detector": "D1",
+        "tipo": "sentinela_numerica",
+        "valor": -1.0,
+        "massa": 0.019826,
+        "confianca": 0.97,
+        "evidencia": {
+          "rota": "continua",
+          "gap_ratio": 1.002305,
+          "limiar": 0.005,
+          "vizinho_mais_proximo": 0.0001,
+          "distancia": 1.0001,
+          "escala": 0.9978,
+          "reforcos": [
+            "constante_canonica",
+            "no_minimo"
+          ],
+          "lift": 196.0,
+          "amplitude_suporte": 0.9978,
+          "ndv": 9888,
+          "ndv_exato": true
+        },
+        "nota": "ponto isolado: vizinho mais proximo 0.0001, a 100.23% da amplitude do suporte (1); tratar como ausente afeta 1.98% das linhas"
+      }
+    },
+    {
+      "defeito": "uf_na",
+      "achado": {
+        "coluna": "uf",
+        "detector": "D2",
+        "tipo": "sentinela_textual",
+        "valor": "N/A",
+        "massa": 0.0200156,
+        "confianca": 0.9,
+        "evidencia": {
+          "metodo": "tabela_de_consulta"
+        },
+        "nota": "codigo textual de ausencia em 2.00% das linhas"
+      }
+    },
+    {
+      "defeito": "nascimento_1900",
+      "achado": {
+        "coluna": "data_nascimento",
+        "detector": "D2",
+        "tipo": "sentinela_temporal",
+        "valor": "1900-01-01",
+        "massa": 0.0150072,
+        "confianca": 0.9,
+        "evidencia": {
+          "metodo": "tabela_de_consulta",
+          "no_extremo": true
+        },
+        "nota": "data sentinela em 1.50% das linhas"
+      }
+    },
+    {
+      "defeito": "score_clip",
+      "achado": {
+        "coluna": "score",
+        "detector": "D1",
+        "tipo": "massa_pontual_em_continua",
+        "valor": 0.001,
+        "massa": 0.0488182,
+        "confianca": 0.9,
+        "evidencia": {
+          "lift": 4829.0,
+          "amplitude_suporte": 0.99799,
+          "ndv": 98918,
+          "ndv_exato": true,
+          "rota": "continua",
+          "gap_ratio": 1.002e-05,
+          "limiar": 0.005,
+          "vizinho_mais_proximo": 0.00101
+        },
+        "nota": "massa pontual de 4.88% em coluna continua (lift 4,829x), mas colada no suporte: distribuicao mista, nao sentinela"
+      }
+    },
+    {
+      "defeito": "recuperado_zero",
+      "achado": {
+        "coluna": "valor_recuperado",
+        "detector": "D1",
+        "tipo": "massa_pontual_em_continua",
+        "valor": 0.0,
+        "massa": 0.7220922,
+        "confianca": 0.9,
+        "evidencia": {
+          "lift": 251306.9,
+          "amplitude_suporte": 89309.04000000001,
+          "ndv": 348026,
+          "ndv_exato": true,
+          "rota": "continua",
+          "gap_ratio": 1.1e-07,
+          "limiar": 0.005,
+          "vizinho_mais_proximo": 0.01
+        },
+        "nota": "massa pontual de 72.21% em coluna continua (lift 251,307x), mas colada no suporte: distribuicao mista, nao sentinela"
+      }
+    },
+    {
+      "defeito": "bureau_quebra",
+      "achado": {
+        "coluna": "score_bureau",
+        "detector": "D3",
+        "tipo": "nulo_por_tempo",
+        "valor": null,
+        "massa": 0.3874482,
+        "confianca": 0.97,
+        "evidencia": {
+          "coluna_tempo": "data_ref",
+          "corte": "2025-04-01",
+          "taxa_antes": 0.0199,
+          "taxa_depois": 1.0,
+          "salto": 0.9801,
+          "buckets": 24
+        },
+        "nota": "taxa de nulo salta de 2.0% para 100.0% em 2025-04-01; nao e uma coluna com 39% de nulos, e uma quebra de origem"
+      }
+    },
+    {
+      "defeito": "fatura_nulo_produto",
+      "achado": {
+        "coluna": "valor_fatura",
+        "detector": "D3",
+        "tipo": "nulo_por_categoria",
+        "valor": null,
+        "massa": 0.0910096,
+        "confianca": 0.743,
+        "evidencia": {
+          "coluna_recorte": "produto",
+          "nivel_alto": "consignado",
+          "taxa_alto": 0.5496,
+          "nivel_baixo": "rotativo",
+          "taxa_baixo": 0.0099,
+          "spread": 0.5397
+        },
+        "nota": "nulo concentrado em produto = 'consignado' (55.0%) contra 1.0% em 'rotativo'"
+      }
+    },
+    {
+      "defeito": "versao_constante",
+      "achado": {
+        "coluna": "versao_modelo",
+        "detector": "D0",
+        "tipo": "coluna_constante",
+        "valor": null,
+        "massa": null,
+        "confianca": 1.0,
+        "evidencia": {
+          "camada": 0,
+          "custo": "zero linhas lidas"
+        },
+        "nota": "min = max = 'v3.1'"
+      }
+    }
+  ],
+  "fn": [
+    "recuperado_vaza",
+    "acionamentos_vaza",
+    "cep_cardinalidade"
+  ],
+  "fp_armadilha": [],
+  "fp_limpa": [],
+  "outros": []
+}

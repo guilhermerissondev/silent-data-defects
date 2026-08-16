@@ -1,0 +1,11 @@
+.venv*/
+__pycache__/
+*.egg-info/
+*.py[cod]
+
+# Base sintetica e safra deteriorada: 271 MB, reprodutiveis com bench/make_data.py
+data/
+
+# Saidas de benchmark ficam versionadas de proposito: sao a evidencia dos
+# numeros do README. Ver reports/.
+bench/_result.json

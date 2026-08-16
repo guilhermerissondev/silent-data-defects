@@ -1,0 +1,1225 @@
+{
+  "rows": 5000000,
+  "ndv": [
+    {
+      "coluna": "id_conta",
+      "aprox": 4889466,
+      "exato": 5000000,
+      "erro": 0.0221068
+    },
+    {
+      "coluna": "data_ref",
+      "aprox": 24,
+      "exato": 24,
+      "erro": 0.0
+    },
+    {
+      "coluna": "idade",
+      "aprox": 79,
+      "exato": 79,
+      "erro": 0.0
+    },
+    {
+      "coluna": "data_nascimento",
+      "aprox": 27934,
+      "exato": 29171,
+      "erro": 0.04240512838092626
+    },
+    {
+      "coluna": "renda",
+      "aprox": 1128554,
+      "exato": 1082283,
+      "erro": 0.04275314312430298
+    },
+    {
+      "coluna": "score_bureau",
+      "aprox": 540,
+      "exato": 540,
+      "erro": 0.0
+    },
+    {
+      "coluna": "saldo_atual",
+      "aprox": 1052276,
+      "exato": 1152786,
+      "erro": 0.0871887757137925
+    },
+    {
+      "coluna": "limite",
+      "aprox": 1918071,
+      "exato": 1927394,
+      "erro": 0.004837101288060459
+    },
+    {
+      "coluna": "utilizacao",
+      "aprox": 9943,
+      "exato": 9869,
+      "erro": 0.007498226770696119
+    },
+    {
+      "coluna": "valor_fatura",
+      "aprox": 640514,
+      "exato": 773260,
+      "erro": 0.17167058945244806
+    },
+    {
+      "coluna": "n_atrasos_12m",
+      "aprox": 9,
+      "exato": 9,
+      "erro": 0.0
+    },
+    {
+      "coluna": "tempo_relacionamento_meses",
+      "aprox": 299,
+      "exato": 299,
+      "erro": 0.0
+    },
+    {
+      "coluna": "dias_desde_ultimo_pgto",
+      "aprox": 91,
+      "exato": 91,
+      "erro": 0.0
+    },
+    {
+      "coluna": "qtd_produtos",
+      "aprox": 13,
+      "exato": 13,
+      "erro": 0.0
+    },
+    {
+      "coluna": "taxa_juros",
+      "aprox": 2606,
+      "exato": 2606,
+      "erro": 0.0
+    },
+    {
+      "coluna": "uf",
+      "aprox": 13,
+      "exato": 13,
+      "erro": 0.0
+    },
+    {
+      "coluna": "produto",
+      "aprox": 4,
+      "exato": 4,
+      "erro": 0.0
+    },
+    {
+      "coluna": "canal",
+      "aprox": 5,
+      "exato": 5,
+      "erro": 0.0
+    },
+    {
+      "coluna": "cep",
+      "aprox": 4212145,
+      "exato": 4876000,
+      "erro": 0.1361474569319114
+    },
+    {
+      "coluna": "versao_modelo",
+      "aprox": 1,
+      "exato": 1,
+      "erro": 0.0
+    },
+    {
+      "coluna": "valor_recuperado",
+      "aprox": 303950,
+      "exato": 348631,
+      "erro": 0.1281612937461098
+    },
+    {
+      "coluna": "n_acionamentos_cobranca",
+      "aprox": 15,
+      "exato": 15,
+      "erro": 0.0
+    },
+    {
+      "coluna": "score",
+      "aprox": 90168,
+      "exato": 98934,
+      "erro": 0.08860452422827339
+    },
+    {
+      "coluna": "inadimplente",
+      "aprox": 2,
+      "exato": 2,
+      "erro": 0.0
+    }
+  ],
+  "quantis": [
+    {
+      "coluna": "id_conta",
+      "q": "p0.001",
+      "aprox": 5000.0,
+      "exato": 4999.999,
+      "erro_amp": 2.0000004004075336e-10
+    },
+    {
+      "coluna": "id_conta",
+      "q": "p0.01",
+      "aprox": 49999.0,
+      "exato": 49999.99,
+      "erro_amp": 1.9800003959960047e-07
+    },
+    {
+      "coluna": "id_conta",
+      "q": "p0.05",
+      "aprox": 250000.0,
+      "exato": 249999.95,
+      "erro_amp": 1.0000001997672093e-08
+    },
+    {
+      "coluna": "id_conta",
+      "q": "p0.25",
+      "aprox": 1250000.0,
+      "exato": 1249999.75,
+      "erro_amp": 5.0000010000002e-08
+    },
+    {
+      "coluna": "id_conta",
+      "q": "p0.5",
+      "aprox": 2487068.0,
+      "exato": 2499999.5,
+      "erro_amp": 0.0025863005172601034
+    },
+    {
+      "coluna": "id_conta",
+      "q": "p0.75",
+      "aprox": 3754962.0,
+      "exato": 3749999.25,
+      "erro_amp": 0.0009925501985100396
+    },
+    {
+      "coluna": "id_conta",
+      "q": "p0.95",
+      "aprox": 4749999.0,
+      "exato": 4749999.05,
+      "erro_amp": 1.000000196274749e-08
+    },
+    {
+      "coluna": "id_conta",
+      "q": "p0.99",
+      "aprox": 4950000.0,
+      "exato": 4949999.01,
+      "erro_amp": 1.980000396447114e-07
+    },
+    {
+      "coluna": "id_conta",
+      "q": "p0.999",
+      "aprox": 4995000.0,
+      "exato": 4994999.001,
+      "erro_amp": 1.9980003992722543e-07
+    },
+    {
+      "coluna": "idade",
+      "q": "p0.001",
+      "aprox": 0.0,
+      "exato": 0.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "idade",
+      "q": "p0.01",
+      "aprox": 0.0,
+      "exato": 0.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "idade",
+      "q": "p0.05",
+      "aprox": 21.0,
+      "exato": 21.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "idade",
+      "q": "p0.25",
+      "aprox": 36.0,
+      "exato": 36.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "idade",
+      "q": "p0.5",
+      "aprox": 56.0,
+      "exato": 56.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "idade",
+      "q": "p0.75",
+      "aprox": 76.0,
+      "exato": 76.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "idade",
+      "q": "p0.95",
+      "aprox": 92.0,
+      "exato": 92.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "idade",
+      "q": "p0.99",
+      "aprox": 95.0,
+      "exato": 95.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "idade",
+      "q": "p0.999",
+      "aprox": 95.0,
+      "exato": 95.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "renda",
+      "q": "p0.001",
+      "aprox": -999.0,
+      "exato": -999.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "renda",
+      "q": "p0.01",
+      "aprox": -999.0,
+      "exato": -999.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "renda",
+      "q": "p0.05",
+      "aprox": 1429.9930186094032,
+      "exato": 1435.02,
+      "erro_amp": 2.9820520322826877e-05
+    },
+    {
+      "coluna": "renda",
+      "q": "p0.25",
+      "aprox": 2498.2865085528315,
+      "exato": 2498.2075,
+      "erro_amp": 4.686860706897269e-07
+    },
+    {
+      "coluna": "renda",
+      "q": "p0.5",
+      "aprox": 3695.5326767769366,
+      "exato": 3694.15,
+      "erro_amp": 8.202167010934554e-06
+    },
+    {
+      "coluna": "renda",
+      "q": "p0.75",
+      "aprox": 5662.072419888103,
+      "exato": 5657.462500000001,
+      "erro_amp": 2.73464727693033e-05
+    },
+    {
+      "coluna": "renda",
+      "q": "p0.95",
+      "aprox": 10951.641020439838,
+      "exato": 10936.840499999998,
+      "erro_amp": 8.779806135551525e-05
+    },
+    {
+      "coluna": "renda",
+      "q": "p0.99",
+      "aprox": 17793.953666162408,
+      "exato": 17739.050599999988,
+      "erro_amp": 0.0003256900857728431
+    },
+    {
+      "coluna": "renda",
+      "q": "p0.999",
+      "aprox": 31455.241665057423,
+      "exato": 30835.940780000125,
+      "erro_amp": 0.003673750347144879
+    },
+    {
+      "coluna": "score_bureau",
+      "q": "p0.001",
+      "aprox": 558.0,
+      "exato": 559.0,
+      "erro_amp": 0.0017730496453900709
+    },
+    {
+      "coluna": "score_bureau",
+      "q": "p0.01",
+      "aprox": 607.0,
+      "exato": 607.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "score_bureau",
+      "q": "p0.05",
+      "aprox": 650.0,
+      "exato": 650.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "score_bureau",
+      "q": "p0.25",
+      "aprox": 709.0,
+      "exato": 709.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "score_bureau",
+      "q": "p0.5",
+      "aprox": 750.0,
+      "exato": 750.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "score_bureau",
+      "q": "p0.75",
+      "aprox": 790.0,
+      "exato": 790.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "score_bureau",
+      "q": "p0.95",
+      "aprox": 847.0,
+      "exato": 847.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "score_bureau",
+      "q": "p0.99",
+      "aprox": 887.0,
+      "exato": 887.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "score_bureau",
+      "q": "p0.999",
+      "aprox": 930.0,
+      "exato": 930.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "saldo_atual",
+      "q": "p0.001",
+      "aprox": 47.84935113108998,
+      "exato": 46.52999,
+      "erro_amp": 6.3378865128932955e-06
+    },
+    {
+      "coluna": "saldo_atual",
+      "q": "p0.01",
+      "aprox": 155.45490503703766,
+      "exato": 154.65,
+      "erro_amp": 3.8665659145092025e-06
+    },
+    {
+      "coluna": "saldo_atual",
+      "q": "p0.05",
+      "aprox": 382.0289313081668,
+      "exato": 382.43,
+      "erro_amp": 1.9266353940663093e-06
+    },
+    {
+      "coluna": "saldo_atual",
+      "q": "p0.25",
+      "aprox": 1190.9484369210097,
+      "exato": 1189.06,
+      "erro_amp": 9.071586702140968e-06
+    },
+    {
+      "coluna": "saldo_atual",
+      "q": "p0.5",
+      "aprox": 2434.849091691495,
+      "exato": 2432.42,
+      "erro_amp": 1.1668759301243543e-05
+    },
+    {
+      "coluna": "saldo_atual",
+      "q": "p0.75",
+      "aprox": 4674.968608076456,
+      "exato": 4672.93,
+      "erro_amp": 9.792972013787556e-06
+    },
+    {
+      "coluna": "saldo_atual",
+      "q": "p0.95",
+      "aprox": 11247.031979637302,
+      "exato": 11227.0405,
+      "erro_amp": 9.603415333402252e-05
+    },
+    {
+      "coluna": "saldo_atual",
+      "q": "p0.99",
+      "aprox": 20393.556594431302,
+      "exato": 20340.521099999976,
+      "erro_amp": 0.0002547694766354323
+    },
+    {
+      "coluna": "saldo_atual",
+      "q": "p0.999",
+      "aprox": 40193.89670527076,
+      "exato": 39021.61278000046,
+      "erro_amp": 0.005631363774612745
+    },
+    {
+      "coluna": "limite",
+      "q": "p0.001",
+      "aprox": 663.890494452254,
+      "exato": 665.68999,
+      "erro_amp": 4.293731953655271e-06
+    },
+    {
+      "coluna": "limite",
+      "q": "p0.01",
+      "aprox": 1017.6913999592044,
+      "exato": 1016.79,
+      "erro_amp": 2.15080821550667e-06
+    },
+    {
+      "coluna": "limite",
+      "q": "p0.05",
+      "aprox": 1693.3990640121385,
+      "exato": 1694.23,
+      "erro_amp": 1.9826758710194906e-06
+    },
+    {
+      "coluna": "limite",
+      "q": "p0.25",
+      "aprox": 3981.9282241596065,
+      "exato": 3980.86,
+      "erro_amp": 2.548863326454873e-06
+    },
+    {
+      "coluna": "limite",
+      "q": "p0.5",
+      "aprox": 6909.078242222553,
+      "exato": 6914.14,
+      "erro_amp": 1.2077735417524133e-05
+    },
+    {
+      "coluna": "limite",
+      "q": "p0.75",
+      "aprox": 11668.623022417532,
+      "exato": 11664.59,
+      "erro_amp": 9.623095342278966e-06
+    },
+    {
+      "coluna": "limite",
+      "q": "p0.95",
+      "aprox": 24711.17033784854,
+      "exato": 24693.531499999994,
+      "erro_amp": 4.2087596043520216e-05
+    },
+    {
+      "coluna": "limite",
+      "q": "p0.99",
+      "aprox": 42155.36610361556,
+      "exato": 41928.2345999999,
+      "erro_amp": 0.0005419528800601275
+    },
+    {
+      "coluna": "limite",
+      "q": "p0.999",
+      "aprox": 76331.44761763496,
+      "exato": 76265.77363000059,
+      "erro_amp": 0.00015670308247377215
+    },
+    {
+      "coluna": "utilizacao",
+      "q": "p0.001",
+      "aprox": 0.013391706197007015,
+      "exato": 0.0132,
+      "erro_amp": 0.00019239883280511308
+    },
+    {
+      "coluna": "utilizacao",
+      "q": "p0.01",
+      "aprox": 0.04201589975578066,
+      "exato": 0.042,
+      "erro_amp": 1.595720170680455e-05
+    },
+    {
+      "coluna": "utilizacao",
+      "q": "p0.05",
+      "aprox": 0.09765339833476236,
+      "exato": 0.0975,
+      "erro_amp": 0.00015395256399272959
+    },
+    {
+      "coluna": "utilizacao",
+      "q": "p0.25",
+      "aprox": 0.24297482038935073,
+      "exato": 0.2429,
+      "erro_amp": 7.509071592806258e-05
+    },
+    {
+      "coluna": "utilizacao",
+      "q": "p0.5",
+      "aprox": 0.38564374881649344,
+      "exato": 0.3855,
+      "erro_amp": 0.0001442681819484419
+    },
+    {
+      "coluna": "utilizacao",
+      "q": "p0.75",
+      "aprox": 0.543144353842316,
+      "exato": 0.5436,
+      "erro_amp": 0.0004572924103613094
+    },
+    {
+      "coluna": "utilizacao",
+      "q": "p0.95",
+      "aprox": 0.7509958160370219,
+      "exato": 0.7512,
+      "erro_amp": 0.0002049216810297622
+    },
+    {
+      "coluna": "utilizacao",
+      "q": "p0.99",
+      "aprox": 0.8590029911050944,
+      "exato": 0.8592,
+      "erro_amp": 0.00019772068938738718
+    },
+    {
+      "coluna": "utilizacao",
+      "q": "p0.999",
+      "aprox": 0.9356076016197308,
+      "exato": 0.9359,
+      "erro_amp": 0.0002934548176125818
+    },
+    {
+      "coluna": "valor_fatura",
+      "q": "p0.001",
+      "aprox": 11.047974633197919,
+      "exato": 10.89,
+      "erro_amp": 8.793756209732165e-07
+    },
+    {
+      "coluna": "valor_fatura",
+      "q": "p0.01",
+      "aprox": 38.79788247599822,
+      "exato": 38.52,
+      "erro_amp": 1.5468500856232933e-06
+    },
+    {
+      "coluna": "valor_fatura",
+      "q": "p0.05",
+      "aprox": 109.43559873105876,
+      "exato": 109.36,
+      "erro_amp": 4.208250383230607e-07
+    },
+    {
+      "coluna": "valor_fatura",
+      "q": "p0.25",
+      "aprox": 443.07449949182455,
+      "exato": 442.4,
+      "erro_amp": 3.7546433719282197e-06
+    },
+    {
+      "coluna": "valor_fatura",
+      "q": "p0.5",
+      "aprox": 1074.417631625214,
+      "exato": 1073.8,
+      "erro_amp": 3.4380848555274868e-06
+    },
+    {
+      "coluna": "valor_fatura",
+      "q": "p0.75",
+      "aprox": 2392.0800213816838,
+      "exato": 2390.39,
+      "erro_amp": 9.407609132501333e-06
+    },
+    {
+      "coluna": "valor_fatura",
+      "q": "p0.95",
+      "aprox": 6637.206826290104,
+      "exato": 6620.09,
+      "erro_amp": 9.528187812971608e-05
+    },
+    {
+      "coluna": "valor_fatura",
+      "q": "p0.99",
+      "aprox": 12856.952633761053,
+      "exato": 12820.36,
+      "erro_amp": 0.00020369517172010859
+    },
+    {
+      "coluna": "valor_fatura",
+      "q": "p0.999",
+      "aprox": 26756.715057924914,
+      "exato": 26087.290999999932,
+      "erro_amp": 0.003726390653458078
+    },
+    {
+      "coluna": "n_atrasos_12m",
+      "q": "p0.001",
+      "aprox": 0.0,
+      "exato": 0.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "n_atrasos_12m",
+      "q": "p0.01",
+      "aprox": 0.0,
+      "exato": 0.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "n_atrasos_12m",
+      "q": "p0.05",
+      "aprox": 0.0,
+      "exato": 0.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "n_atrasos_12m",
+      "q": "p0.25",
+      "aprox": 0.0,
+      "exato": 0.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "n_atrasos_12m",
+      "q": "p0.5",
+      "aprox": 0.0,
+      "exato": 0.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "n_atrasos_12m",
+      "q": "p0.75",
+      "aprox": 1.0,
+      "exato": 1.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "n_atrasos_12m",
+      "q": "p0.95",
+      "aprox": 2.0,
+      "exato": 2.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "n_atrasos_12m",
+      "q": "p0.99",
+      "aprox": 3.0,
+      "exato": 3.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "n_atrasos_12m",
+      "q": "p0.999",
+      "aprox": 4.0,
+      "exato": 4.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "tempo_relacionamento_meses",
+      "q": "p0.001",
+      "aprox": 1.0,
+      "exato": 1.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "tempo_relacionamento_meses",
+      "q": "p0.01",
+      "aprox": 4.0,
+      "exato": 3.0,
+      "erro_amp": 0.003355704697986577
+    },
+    {
+      "coluna": "tempo_relacionamento_meses",
+      "q": "p0.05",
+      "aprox": 15.0,
+      "exato": 15.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "tempo_relacionamento_meses",
+      "q": "p0.25",
+      "aprox": 75.0,
+      "exato": 75.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "tempo_relacionamento_meses",
+      "q": "p0.5",
+      "aprox": 150.0,
+      "exato": 150.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "tempo_relacionamento_meses",
+      "q": "p0.75",
+      "aprox": 225.0,
+      "exato": 225.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "tempo_relacionamento_meses",
+      "q": "p0.95",
+      "aprox": 284.0,
+      "exato": 285.0,
+      "erro_amp": 0.003355704697986577
+    },
+    {
+      "coluna": "tempo_relacionamento_meses",
+      "q": "p0.99",
+      "aprox": 296.0,
+      "exato": 297.0,
+      "erro_amp": 0.003355704697986577
+    },
+    {
+      "coluna": "tempo_relacionamento_meses",
+      "q": "p0.999",
+      "aprox": 299.0,
+      "exato": 299.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "dias_desde_ultimo_pgto",
+      "q": "p0.001",
+      "aprox": 0.0,
+      "exato": 0.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "dias_desde_ultimo_pgto",
+      "q": "p0.01",
+      "aprox": 0.0,
+      "exato": 0.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "dias_desde_ultimo_pgto",
+      "q": "p0.05",
+      "aprox": 4.0,
+      "exato": 4.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "dias_desde_ultimo_pgto",
+      "q": "p0.25",
+      "aprox": 22.0,
+      "exato": 22.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "dias_desde_ultimo_pgto",
+      "q": "p0.5",
+      "aprox": 45.0,
+      "exato": 45.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "dias_desde_ultimo_pgto",
+      "q": "p0.75",
+      "aprox": 68.0,
+      "exato": 68.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "dias_desde_ultimo_pgto",
+      "q": "p0.95",
+      "aprox": 86.0,
+      "exato": 86.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "dias_desde_ultimo_pgto",
+      "q": "p0.99",
+      "aprox": 1096.0,
+      "exato": 89.0,
+      "erro_amp": 0.10071007100710071
+    },
+    {
+      "coluna": "dias_desde_ultimo_pgto",
+      "q": "p0.999",
+      "aprox": 9999.0,
+      "exato": 9999.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "qtd_produtos",
+      "q": "p0.001",
+      "aprox": 0.0,
+      "exato": 0.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "qtd_produtos",
+      "q": "p0.01",
+      "aprox": 0.0,
+      "exato": 0.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "qtd_produtos",
+      "q": "p0.05",
+      "aprox": 0.0,
+      "exato": 0.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "qtd_produtos",
+      "q": "p0.25",
+      "aprox": 0.0,
+      "exato": 0.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "qtd_produtos",
+      "q": "p0.5",
+      "aprox": 1.0,
+      "exato": 1.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "qtd_produtos",
+      "q": "p0.75",
+      "aprox": 2.0,
+      "exato": 2.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "qtd_produtos",
+      "q": "p0.95",
+      "aprox": 4.0,
+      "exato": 4.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "qtd_produtos",
+      "q": "p0.99",
+      "aprox": 5.0,
+      "exato": 5.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "qtd_produtos",
+      "q": "p0.999",
+      "aprox": 6.0,
+      "exato": 6.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "taxa_juros",
+      "q": "p0.001",
+      "aprox": 0.026509796551144535,
+      "exato": 0.0272,
+      "erro_amp": 0.0022372883269220862
+    },
+    {
+      "coluna": "taxa_juros",
+      "q": "p0.01",
+      "aprox": 0.05021334493173807,
+      "exato": 0.0502,
+      "erro_amp": 4.3257477270882045e-05
+    },
+    {
+      "coluna": "taxa_juros",
+      "q": "p0.05",
+      "aprox": 0.07074488497418041,
+      "exato": 0.0707,
+      "erro_amp": 0.0001454942436966351
+    },
+    {
+      "coluna": "taxa_juros",
+      "q": "p0.25",
+      "aprox": 0.09979837690403578,
+      "exato": 0.0998,
+      "erro_amp": 5.261251099562233e-06
+    },
+    {
+      "coluna": "taxa_juros",
+      "q": "p0.5",
+      "aprox": 0.12001013565366343,
+      "exato": 0.12,
+      "erro_amp": 3.2854630999796665e-05
+    },
+    {
+      "coluna": "taxa_juros",
+      "q": "p0.75",
+      "aprox": 0.14024165431293412,
+      "exato": 0.1402,
+      "erro_amp": 0.00013502208406523545
+    },
+    {
+      "coluna": "taxa_juros",
+      "q": "p0.95",
+      "aprox": 0.1693077710100069,
+      "exato": 0.1693,
+      "erro_amp": 2.5189659665807858e-05
+    },
+    {
+      "coluna": "taxa_juros",
+      "q": "p0.99",
+      "aprox": 0.18984509279131953,
+      "exato": 0.1898,
+      "erro_amp": 0.00014616788110059727
+    },
+    {
+      "coluna": "taxa_juros",
+      "q": "p0.999",
+      "aprox": 0.21394693409210566,
+      "exato": 0.21270010000001638,
+      "erro_amp": 0.004041601595103024
+    },
+    {
+      "coluna": "valor_recuperado",
+      "q": "p0.001",
+      "aprox": 0.0,
+      "exato": 0.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "valor_recuperado",
+      "q": "p0.01",
+      "aprox": 0.0,
+      "exato": 0.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "valor_recuperado",
+      "q": "p0.05",
+      "aprox": 0.0,
+      "exato": 0.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "valor_recuperado",
+      "q": "p0.25",
+      "aprox": 0.0,
+      "exato": 0.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "valor_recuperado",
+      "q": "p0.5",
+      "aprox": 0.0,
+      "exato": 0.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "valor_recuperado",
+      "q": "p0.75",
+      "aprox": 84.07170943143542,
+      "exato": 83.29,
+      "erro_amp": 8.528444166698759e-06
+    },
+    {
+      "coluna": "valor_recuperado",
+      "q": "p0.95",
+      "aprox": 1794.9597216696297,
+      "exato": 1785.46,
+      "erro_amp": 0.00010364189377867168
+    },
+    {
+      "coluna": "valor_recuperado",
+      "q": "p0.99",
+      "aprox": 4386.2759550281235,
+      "exato": 4371.700299999993,
+      "erro_amp": 0.0001590202895111692
+    },
+    {
+      "coluna": "valor_recuperado",
+      "q": "p0.999",
+      "aprox": 10610.69823636765,
+      "exato": 10076.200450000075,
+      "erro_amp": 0.005831366931174811
+    },
+    {
+      "coluna": "n_acionamentos_cobranca",
+      "q": "p0.001",
+      "aprox": 0.0,
+      "exato": 0.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "n_acionamentos_cobranca",
+      "q": "p0.01",
+      "aprox": 0.0,
+      "exato": 0.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "n_acionamentos_cobranca",
+      "q": "p0.05",
+      "aprox": 0.0,
+      "exato": 0.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "n_acionamentos_cobranca",
+      "q": "p0.25",
+      "aprox": 0.0,
+      "exato": 0.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "n_acionamentos_cobranca",
+      "q": "p0.5",
+      "aprox": 0.0,
+      "exato": 0.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "n_acionamentos_cobranca",
+      "q": "p0.75",
+      "aprox": 2.0,
+      "exato": 2.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "n_acionamentos_cobranca",
+      "q": "p0.95",
+      "aprox": 12.0,
+      "exato": 12.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "n_acionamentos_cobranca",
+      "q": "p0.99",
+      "aprox": 14.0,
+      "exato": 14.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "n_acionamentos_cobranca",
+      "q": "p0.999",
+      "aprox": 14.0,
+      "exato": 14.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "score",
+      "q": "p0.001",
+      "aprox": 0.001,
+      "exato": 0.001,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "score",
+      "q": "p0.01",
+      "aprox": 0.001,
+      "exato": 0.001,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "score",
+      "q": "p0.05",
+      "aprox": 0.0033363840018033586,
+      "exato": 0.00208,
+      "erro_amp": 0.0012589018054141872
+    },
+    {
+      "coluna": "score",
+      "q": "p0.25",
+      "aprox": 0.10823368654509372,
+      "exato": 0.10813,
+      "erro_amp": 0.00010389433376123435
+    },
+    {
+      "coluna": "score",
+      "q": "p0.5",
+      "aprox": 0.2265646704743115,
+      "exato": 0.22649,
+      "erro_amp": 7.482011454058682e-05
+    },
+    {
+      "coluna": "score",
+      "q": "p0.75",
+      "aprox": 0.41087859763762036,
+      "exato": 0.41159,
+      "erro_amp": 0.0007128280184164869
+    },
+    {
+      "coluna": "score",
+      "q": "p0.95",
+      "aprox": 0.7195800205443222,
+      "exato": 0.7199,
+      "erro_amp": 0.00032062069707188733
+    },
+    {
+      "coluna": "score",
+      "q": "p0.99",
+      "aprox": 0.8774043557552479,
+      "exato": 0.87732,
+      "erro_amp": 8.45248048576154e-05
+    },
+    {
+      "coluna": "score",
+      "q": "p0.999",
+      "aprox": 0.9862985026331403,
+      "exato": 0.99181,
+      "erro_amp": 0.0055225424517631565
+    },
+    {
+      "coluna": "inadimplente",
+      "q": "p0.001",
+      "aprox": 0.0,
+      "exato": 0.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "inadimplente",
+      "q": "p0.01",
+      "aprox": 0.0,
+      "exato": 0.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "inadimplente",
+      "q": "p0.05",
+      "aprox": 0.0,
+      "exato": 0.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "inadimplente",
+      "q": "p0.25",
+      "aprox": 0.0,
+      "exato": 0.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "inadimplente",
+      "q": "p0.5",
+      "aprox": 0.0,
+      "exato": 0.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "inadimplente",
+      "q": "p0.75",
+      "aprox": 1.0,
+      "exato": 1.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "inadimplente",
+      "q": "p0.95",
+      "aprox": 1.0,
+      "exato": 1.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "inadimplente",
+      "q": "p0.99",
+      "aprox": 1.0,
+      "exato": 1.0,
+      "erro_amp": 0.0
+    },
+    {
+      "coluna": "inadimplente",
+      "q": "p0.999",
+      "aprox": 1.0,
+      "exato": 1.0,
+      "erro_amp": 0.0
+    }
+  ],
+  "t_exact_ndv_s": 1.8891360000125133,
+  "t_exact_quantile_s": 13.144803399976809,
+  "t_sdd_s": 3.5059829999809153
+}

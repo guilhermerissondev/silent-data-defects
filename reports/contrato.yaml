@@ -1,0 +1,1610 @@
+contract_version: 1
+emitido_em: '2026-08-16T19:09:19+00:00'
+fonte:
+  caminho: data/contas.parquet
+  linhas: 5000000
+  colunas: 26
+  motor: duckdb 1.5.5
+politica:
+  alpha: 0.01
+  correcao_multiplicidade: bonferroni
+  n_checks: 72
+  efeito_minimo:
+    taxa: 0.005
+    amplitude: 0.02
+  psi_limite: 0.1
+  nota: Todo teste exige significancia E efeito minimo. Com milhoes de linhas a significancia sozinha
+    alarma por diferenca que nao muda decisao nenhuma. O piso de efeito aqui e constante declarada; deriva-lo
+    do impacto na decisao e o marco 4.
+decisao: null
+severidade: Ausente de proposito. Deriva do impacto na decisao (marco 4); atribui-la aqui seria ordenar
+  por prevalencia.
+colunas:
+  id_conta:
+    tipo: BIGINT
+    classe: numeric
+    nulo:
+      p_ref: 0.0
+      n_ref: 5000000
+      wilson_95_na_emissao:
+      - 0.0
+      - 7.7e-07
+    faixa:
+      min: 0
+      max: 4999999
+    ndv:
+      valor: 4889466
+      exato: false
+    quantis:
+      p0.001: 5000
+      p0.01: 49999
+      p0.05: 250000
+      p0.25: 1248662
+      p0.5: 2487974
+      p0.75: 3729368
+      p0.95: 4749999
+      p0.99: 4950000
+      p0.999: 4995000
+    quantis_sao_aproximados: true
+  data_ref:
+    tipo: DATE
+    classe: temporal
+    nulo:
+      p_ref: 0.0
+      n_ref: 5000000
+      wilson_95_na_emissao:
+      - 0.0
+      - 7.7e-07
+    faixa:
+      min: '2024-01-01'
+      max: '2025-12-01'
+    ndv:
+      valor: 24
+      exato: true
+  idade:
+    tipo: INTEGER
+    classe: numeric
+    nulo:
+      p_ref: 0.0
+      n_ref: 5000000
+      wilson_95_na_emissao:
+      - 0.0
+      - 7.7e-07
+    faixa:
+      min: 0
+      max: 95
+    ndv:
+      valor: 79
+      exato: true
+    quantis:
+      p0.001: 0
+      p0.01: 3
+      p0.05: 20
+      p0.25: 36
+      p0.5: 56
+      p0.75: 76
+      p0.95: 92
+      p0.99: 95
+      p0.999: 95
+    quantis_sao_aproximados: true
+    sentinelas:
+    - valor: 0.0
+      massa_ref: 0.011983
+      detector: D1
+      evidencia:
+        rota: discreta
+        gap_ratio: 18.0
+        limiar: 8.0
+        vizinho_mais_proximo: 18.0
+        distancia: 18.0
+        escala: 1.0
+        reforcos:
+        - no_minimo
+        espacamento_mediano: 1.0
+        ndv: 79
+        quantis_sem_candidato:
+          p01: 18.0
+          p25: 37.0
+          p50: 56.0
+          p75: 76.0
+          p99: 95.0
+  data_nascimento:
+    tipo: DATE
+    classe: temporal
+    nulo:
+      p_ref: 0.0
+      n_ref: 5000000
+      wilson_95_na_emissao:
+      - 0.0
+      - 7.7e-07
+    faixa:
+      min: '1900-01-01'
+      max: '2007-12-06'
+    ndv:
+      valor: 29171
+      exato: true
+    sentinelas:
+    - valor: '1900-01-01'
+      massa_ref: 0.0150072
+      detector: D2
+      evidencia:
+        metodo: tabela_de_consulta
+        no_extremo: true
+  renda:
+    tipo: DOUBLE
+    classe: numeric
+    nulo:
+      p_ref: 0.0
+      n_ref: 5000000
+      wilson_95_na_emissao:
+      - 0.0
+      - 7.7e-07
+    faixa:
+      min: -999.0
+      max: 129773.94
+    ndv:
+      valor: 1081910
+      exato: true
+    quantis:
+      p0.001: -999.0
+      p0.01: -999.0
+      p0.05: 1430.3096424453286
+      p0.25: 2496.772649668004
+      p0.5: 3690.431074971499
+      p0.75: 5654.378119033847
+      p0.95: 10945.101231900457
+      p0.99: 17782.78565666682
+      p0.999: 31838.41254338282
+    quantis_sao_aproximados: true
+    sentinelas:
+    - valor: -999.0
+      massa_ref: 0.0309886
+      detector: D1
+      evidencia:
+        rota: continua
+        gap_ratio: 0.014563
+        limiar: 0.005
+        vizinho_mais_proximo: 878.09
+        distancia: 1877.0900000000001
+        escala: 128895.85
+        reforcos:
+        - constante_canonica
+        - no_minimo
+        lift: 33526.9
+        amplitude_suporte: 128895.85
+        ndv: 1081910
+        ndv_exato: true
+  score_bureau:
+    tipo: INTEGER
+    classe: numeric
+    nulo:
+      p_ref: 0.3874482
+      n_ref: 5000000
+      wilson_95_na_emissao:
+      - 0.38702127
+      - 0.3878753
+    faixa:
+      min: 406
+      max: 1000
+    ndv:
+      valor: 543
+      exato: true
+    quantis:
+      p0.001: 557
+      p0.01: 607
+      p0.05: 650
+      p0.25: 709
+      p0.5: 750
+      p0.75: 790
+      p0.95: 847
+      p0.99: 886
+      p0.999: 930
+    quantis_sao_aproximados: true
+    achados_na_emissao:
+    - detector: D3
+      tipo: nulo_por_tempo
+      nota: taxa de nulo salta de 2.0% para 100.0% em 2025-04-01; nao e uma coluna com 39% de nulos, e
+        uma quebra de origem
+  saldo_atual:
+    tipo: DOUBLE
+    classe: numeric
+    nulo:
+      p_ref: 0.0
+      n_ref: 5000000
+      wilson_95_na_emissao:
+      - 0.0
+      - 7.7e-07
+    faixa:
+      min: 0.85
+      max: 220353.82
+    ndv:
+      valor: 1152430
+      exato: true
+    quantis:
+      p0.001: 47.35010748896122
+      p0.01: 154.95152490625097
+      p0.05: 382.89737215541226
+      p0.25: 1187.5610152524634
+      p0.5: 2430.9720633336274
+      p0.75: 4668.586356958592
+      p0.95: 11233.839448995692
+      p0.99: 20378.648042020657
+      p0.999: 40416.44016812767
+    quantis_sao_aproximados: true
+  limite:
+    tipo: DOUBLE
+    classe: numeric
+    nulo:
+      p_ref: 0.0
+      n_ref: 5000000
+      wilson_95_na_emissao:
+      - 0.0
+      - 7.7e-07
+    faixa:
+      min: 374.09
+      max: 389735.65
+    ndv:
+      valor: 1926234
+      exato: true
+    quantis:
+      p0.001: 664.5020189327865
+      p0.01: 1016.1074911123621
+      p0.05: 1695.7493559404766
+      p0.25: 3981.5433707349102
+      p0.5: 6908.494247416654
+      p0.75: 11654.871112872144
+      p0.95: 24666.444291100328
+      p0.99: 42113.881841269285
+      p0.999: 78152.98414176475
+    quantis_sao_aproximados: true
+  utilizacao:
+    tipo: DOUBLE
+    classe: numeric
+    nulo:
+      p_ref: 0.0
+      n_ref: 5000000
+      wilson_95_na_emissao:
+      - 0.0
+      - 7.7e-07
+    faixa:
+      min: -1.0
+      max: 0.9979
+    ndv:
+      valor: 9888
+      exato: true
+    quantis:
+      p0.001: -1.0
+      p0.01: -1.0
+      p0.05: 0.074878999485067
+      p0.25: 0.23297829614715757
+      p0.5: 0.3783040693550891
+      p0.75: 0.5387574568205633
+      p0.95: 0.748695250943725
+      p0.99: 0.8572083120350726
+      p0.999: 0.9349631620452298
+    quantis_sao_aproximados: true
+    sentinelas:
+    - valor: -1.0
+      massa_ref: 0.019826
+      detector: D1
+      evidencia:
+        rota: continua
+        gap_ratio: 1.002305
+        limiar: 0.005
+        vizinho_mais_proximo: 0.0001
+        distancia: 1.0001
+        escala: 0.9978
+        reforcos:
+        - constante_canonica
+        - no_minimo
+        lift: 196.0
+        amplitude_suporte: 0.9978
+        ndv: 9888
+        ndv_exato: true
+  valor_fatura:
+    tipo: DOUBLE
+    classe: numeric
+    nulo:
+      p_ref: 0.0910096
+      n_ref: 5000000
+      wilson_95_na_emissao:
+      - 0.09075781
+      - 0.09126202
+    faixa:
+      min: 0.16
+      max: 152192.54
+    ndv:
+      valor: 772679
+      exato: true
+    quantis:
+      p0.001: 10.919497190564453
+      p0.01: 38.3947858616482
+      p0.05: 109.45589156780517
+      p0.25: 442.77796573506424
+      p0.5: 1073.9386166130287
+      p0.75: 2387.30698634811
+      p0.95: 6607.399906975992
+      p0.99: 12872.765822127209
+      p0.999: 26837.800827858006
+    quantis_sao_aproximados: true
+    achados_na_emissao:
+    - detector: D3
+      tipo: nulo_por_categoria
+      nota: nulo concentrado em produto = 'consignado' (55.0%) contra 1.0% em 'rotativo'
+  n_atrasos_12m:
+    tipo: INTEGER
+    classe: numeric
+    nulo:
+      p_ref: 0.0
+      n_ref: 5000000
+      wilson_95_na_emissao:
+      - 0.0
+      - 7.7e-07
+    faixa:
+      min: 0
+      max: 9
+    ndv:
+      valor: 10
+      exato: true
+    quantis:
+      p0.001: 0
+      p0.01: 0
+      p0.05: 0
+      p0.25: 0
+      p0.5: 0
+      p0.75: 1
+      p0.95: 2
+      p0.99: 3
+      p0.999: 4
+    quantis_sao_aproximados: true
+  tempo_relacionamento_meses:
+    tipo: INTEGER
+    classe: numeric
+    nulo:
+      p_ref: 0.0
+      n_ref: 5000000
+      wilson_95_na_emissao:
+      - 0.0
+      - 7.7e-07
+    faixa:
+      min: 1
+      max: 299
+    ndv:
+      valor: 299
+      exato: true
+    quantis:
+      p0.001: 1
+      p0.01: 4
+      p0.05: 16
+      p0.25: 75
+      p0.5: 150
+      p0.75: 225
+      p0.95: 284
+      p0.99: 297
+      p0.999: 299
+    quantis_sao_aproximados: true
+  dias_desde_ultimo_pgto:
+    tipo: INTEGER
+    classe: numeric
+    nulo:
+      p_ref: 0.0
+      n_ref: 5000000
+      wilson_95_na_emissao:
+      - 0.0
+      - 7.7e-07
+    faixa:
+      min: 0
+      max: 9999
+    ndv:
+      valor: 91
+      exato: true
+    quantis:
+      p0.001: 0
+      p0.01: 0
+      p0.05: 4
+      p0.25: 22
+      p0.5: 45
+      p0.75: 68
+      p0.95: 86
+      p0.99: 89
+      p0.999: 9999
+    quantis_sao_aproximados: true
+    sentinelas:
+    - valor: 9999.0
+      massa_ref: 0.0080226
+      detector: D1
+      evidencia:
+        rota: discreta
+        gap_ratio: 9910.0
+        limiar: 8.0
+        vizinho_mais_proximo: 89.0
+        distancia: 9910.0
+        escala: 1.0
+        reforcos:
+        - constante_canonica
+        - no_maximo
+        espacamento_mediano: 1.0
+        ndv: 91
+        quantis_sem_candidato:
+          p01: 0.0
+          p25: 22.0
+          p50: 45.0
+          p75: 67.0
+          p99: 89.0
+  qtd_produtos:
+    tipo: INTEGER
+    classe: numeric
+    nulo:
+      p_ref: 0.0
+      n_ref: 5000000
+      wilson_95_na_emissao:
+      - 0.0
+      - 7.7e-07
+    faixa:
+      min: 0
+      max: 11
+    ndv:
+      valor: 12
+      exato: true
+    quantis:
+      p0.001: 0
+      p0.01: 0
+      p0.05: 0
+      p0.25: 0
+      p0.5: 1
+      p0.75: 2
+      p0.95: 4
+      p0.99: 5
+      p0.999: 6
+    quantis_sao_aproximados: true
+  taxa_juros:
+    tipo: DOUBLE
+    classe: numeric
+    nulo:
+      p_ref: 0.0
+      n_ref: 5000000
+      wilson_95_na_emissao:
+      - 0.0
+      - 7.7e-07
+    faixa:
+      min: -0.0422
+      max: 0.2785
+    ndv:
+      valor: 2596
+      exato: true
+    quantis:
+      p0.001: 0.02655133354995173
+      p0.01: 0.05028864059980429
+      p0.05: 0.0705890505540384
+      p0.25: 0.09975616676101587
+      p0.5: 0.11998017747886627
+      p0.75: 0.14025629946409546
+      p0.95: 0.1693623444450402
+      p0.99: 0.18983471288137033
+      p0.999: 0.21315720051900278
+    quantis_sao_aproximados: true
+  uf:
+    tipo: VARCHAR
+    classe: string
+    nulo:
+      p_ref: 0.0
+      n_ref: 5000000
+      wilson_95_na_emissao:
+      - 0.0
+      - 7.7e-07
+    ndv:
+      valor: 13
+      exato: true
+    niveis:
+    - BA
+    - CE
+    - GO
+    - MA
+    - MG
+    - N/A
+    - PA
+    - PE
+    - PR
+    - RJ
+    - RS
+    - SC
+    - SP
+    sentinelas:
+    - valor: N/A
+      massa_ref: 0.0200156
+      detector: D2
+      evidencia:
+        metodo: tabela_de_consulta
+  produto:
+    tipo: VARCHAR
+    classe: string
+    nulo:
+      p_ref: 0.0
+      n_ref: 5000000
+      wilson_95_na_emissao:
+      - 0.0
+      - 7.7e-07
+    ndv:
+      valor: 4
+      exato: true
+    niveis:
+    - cheque_especial
+    - consignado
+    - parcelado
+    - rotativo
+  canal:
+    tipo: VARCHAR
+    classe: string
+    nulo:
+      p_ref: 0.0
+      n_ref: 5000000
+      wilson_95_na_emissao:
+      - 0.0
+      - 7.7e-07
+    ndv:
+      valor: 5
+      exato: true
+    niveis:
+    - agencia
+    - app
+    - parceiro
+    - telefone
+    - web
+  cep:
+    tipo: VARCHAR
+    classe: string
+    nulo:
+      p_ref: 0.0
+      n_ref: 5000000
+      wilson_95_na_emissao:
+      - 0.0
+      - 7.7e-07
+    ndv:
+      valor: 4032755
+      exato: false
+  possui_seguro:
+    tipo: BOOLEAN
+    classe: boolean
+    nulo:
+      p_ref: 0.0
+      n_ref: 5000000
+      wilson_95_na_emissao:
+      - 0.0
+      - 7.7e-07
+    ndv:
+      valor: 2
+      exato: true
+    niveis:
+    - 'False'
+    - 'True'
+  flag_pep:
+    tipo: BOOLEAN
+    classe: boolean
+    nulo:
+      p_ref: 0.0
+      n_ref: 5000000
+      wilson_95_na_emissao:
+      - 0.0
+      - 7.7e-07
+    ndv:
+      valor: 2
+      exato: true
+    niveis:
+    - 'False'
+    - 'True'
+  versao_modelo:
+    tipo: VARCHAR
+    classe: string
+    nulo:
+      p_ref: 0.0
+      n_ref: 5000000
+      wilson_95_na_emissao:
+      - 0.0
+      - 7.7e-07
+    ndv:
+      valor: 1
+      exato: true
+    niveis:
+    - v3.1
+    achados_na_emissao:
+    - detector: D0
+      tipo: coluna_constante
+      nota: min = max = 'v3.1'
+  valor_recuperado:
+    tipo: DOUBLE
+    classe: numeric
+    nulo:
+      p_ref: 0.0
+      n_ref: 5000000
+      wilson_95_na_emissao:
+      - 0.0
+      - 7.7e-07
+    faixa:
+      min: 0.0
+      max: 89309.05
+    ndv:
+      valor: 348026
+      exato: true
+    quantis:
+      p0.001: 0.0
+      p0.01: 0.0
+      p0.05: 0.0
+      p0.25: 0.0
+      p0.5: 0.0
+      p0.75: 83.097358769549
+      p0.95: 1780.9433464631131
+      p0.99: 4395.337938627142
+      p0.999: 10423.105577524731
+    quantis_sao_aproximados: true
+    achados_na_emissao:
+    - detector: D1
+      tipo: massa_pontual_em_continua
+      nota: 'massa pontual de 72.21% em coluna continua (lift 251,307x), mas colada no suporte: distribuicao
+        mista, nao sentinela'
+  n_acionamentos_cobranca:
+    tipo: INTEGER
+    classe: numeric
+    nulo:
+      p_ref: 0.0
+      n_ref: 5000000
+      wilson_95_na_emissao:
+      - 0.0
+      - 7.7e-07
+    faixa:
+      min: 0
+      max: 14
+    ndv:
+      valor: 15
+      exato: true
+    quantis:
+      p0.001: 0
+      p0.01: 0
+      p0.05: 0
+      p0.25: 0
+      p0.5: 0
+      p0.75: 2
+      p0.95: 12
+      p0.99: 14
+      p0.999: 14
+    quantis_sao_aproximados: true
+  score:
+    tipo: DOUBLE
+    classe: numeric
+    nulo:
+      p_ref: 0.0
+      n_ref: 5000000
+      wilson_95_na_emissao:
+      - 0.0
+      - 7.7e-07
+    faixa:
+      min: 0.001
+      max: 0.999
+    ndv:
+      valor: 98918
+      exato: true
+    quantis:
+      p0.001: 0.001
+      p0.01: 0.001
+      p0.05: 0.0031719266537784912
+      p0.25: 0.10825718763950584
+      p0.5: 0.22679596668128524
+      p0.75: 0.41152694837916914
+      p0.95: 0.7197624353839086
+      p0.99: 0.8766333715466944
+      p0.999: 0.9869048799449874
+    quantis_sao_aproximados: true
+    achados_na_emissao:
+    - detector: D1
+      tipo: massa_pontual_em_continua
+      nota: 'massa pontual de 4.88% em coluna continua (lift 4,829x), mas colada no suporte: distribuicao
+        mista, nao sentinela'
+  inadimplente:
+    tipo: TINYINT
+    classe: numeric
+    nulo:
+      p_ref: 0.0
+      n_ref: 5000000
+      wilson_95_na_emissao:
+      - 0.0
+      - 7.7e-07
+    faixa:
+      min: 0
+      max: 1
+    ndv:
+      valor: 2
+      exato: true
+    quantis:
+      p0.001: 0
+      p0.01: 0
+      p0.05: 0
+      p0.25: 0
+      p0.5: 0
+      p0.75: 1
+      p0.95: 1
+      p0.99: 1
+      p0.999: 1
+    quantis_sao_aproximados: true
+checks:
+- id: id_conta.nulo
+  coluna: id_conta
+  tipo: proporcao
+  campo: taxa_de_nulo
+  p_ref: 0.0
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: tolerancia por teste de duas proporcoes com o n do lote novo
+- id: id_conta.faixa
+  coluna: id_conta
+  tipo: faixa
+  min: 0
+  max: 4999999
+  severidade: indefinida
+  porque: valor fora da faixa observada indica dominio novo ou unidade trocada
+- id: data_ref.nulo
+  coluna: data_ref
+  tipo: proporcao
+  campo: taxa_de_nulo
+  p_ref: 0.0
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: tolerancia por teste de duas proporcoes com o n do lote novo
+- id: data_ref.faixa
+  coluna: data_ref
+  tipo: faixa
+  min: '2024-01-01'
+  max: '2025-12-01'
+  severidade: indefinida
+  porque: valor fora da faixa observada indica dominio novo ou unidade trocada
+- id: idade.nulo
+  coluna: idade
+  tipo: proporcao
+  campo: taxa_de_nulo
+  p_ref: 0.0
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: tolerancia por teste de duas proporcoes com o n do lote novo
+- id: idade.faixa
+  coluna: idade
+  tipo: faixa
+  min: 0
+  max: 95
+  severidade: indefinida
+  porque: valor fora da faixa observada indica dominio novo ou unidade trocada
+- id: idade.distribuicao
+  coluna: idade
+  tipo: psi
+  bordas:
+  - 0.0
+  - 3.0
+  - 20.0
+  - 36.0
+  - 56.0
+  - 76.0
+  - 92.0
+  - 95.0
+  esperado:
+  - 0.0
+  - 0.011983
+  - 0.0253348
+  - 0.2025526
+  - 0.2536942
+  - 0.2532956
+  - 0.202525
+  - 0.0379772
+  - 0.0126376
+  esperado_medido: true
+  limite: 0.1
+  severidade: indefinida
+  porque: PSI por feature; agregado sobre o escore e pouco sensivel. Proporcoes esperadas medidas na base
+    de referencia, nao inferidas dos niveis dos quantis
+- id: idade.sentinela[0.0]
+  coluna: idade
+  tipo: sentinela
+  valor: 0.0
+  massa_ref: 0.011983
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: massa da sentinela nao deve crescer. O alvo presumivel e zero depois que a origem for corrigida,
+    mas quem decide isso e o dono do pipeline, nao o contrato
+- id: data_nascimento.nulo
+  coluna: data_nascimento
+  tipo: proporcao
+  campo: taxa_de_nulo
+  p_ref: 0.0
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: tolerancia por teste de duas proporcoes com o n do lote novo
+- id: data_nascimento.faixa
+  coluna: data_nascimento
+  tipo: faixa
+  min: '1900-01-01'
+  max: '2007-12-06'
+  severidade: indefinida
+  porque: valor fora da faixa observada indica dominio novo ou unidade trocada
+- id: data_nascimento.sentinela[1900-01-01]
+  coluna: data_nascimento
+  tipo: sentinela
+  valor: '1900-01-01'
+  massa_ref: 0.0150072
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: massa da sentinela nao deve crescer. O alvo presumivel e zero depois que a origem for corrigida,
+    mas quem decide isso e o dono do pipeline, nao o contrato
+- id: renda.nulo
+  coluna: renda
+  tipo: proporcao
+  campo: taxa_de_nulo
+  p_ref: 0.0
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: tolerancia por teste de duas proporcoes com o n do lote novo
+- id: renda.faixa
+  coluna: renda
+  tipo: faixa
+  min: -999.0
+  max: 129773.94
+  severidade: indefinida
+  porque: valor fora da faixa observada indica dominio novo ou unidade trocada
+- id: renda.distribuicao
+  coluna: renda
+  tipo: psi
+  bordas:
+  - -999.0
+  - 1430.3096424453286
+  - 2496.772649668004
+  - 3690.431074971499
+  - 5654.378119033847
+  - 10945.101231900457
+  - 17782.78565666682
+  - 31838.41254338282
+  esperado:
+  - 0.0
+  - 0.0495432
+  - 0.2006246
+  - 0.2496774
+  - 0.2502046
+  - 0.200128
+  - 0.0399032
+  - 0.0090522
+  - 0.0008668
+  esperado_medido: true
+  limite: 0.1
+  severidade: indefinida
+  porque: PSI por feature; agregado sobre o escore e pouco sensivel. Proporcoes esperadas medidas na base
+    de referencia, nao inferidas dos niveis dos quantis
+- id: renda.sentinela[-999.0]
+  coluna: renda
+  tipo: sentinela
+  valor: -999.0
+  massa_ref: 0.0309886
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: massa da sentinela nao deve crescer. O alvo presumivel e zero depois que a origem for corrigida,
+    mas quem decide isso e o dono do pipeline, nao o contrato
+- id: score_bureau.nulo
+  coluna: score_bureau
+  tipo: proporcao
+  campo: taxa_de_nulo
+  p_ref: 0.3874482
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: tolerancia por teste de duas proporcoes com o n do lote novo
+- id: score_bureau.faixa
+  coluna: score_bureau
+  tipo: faixa
+  min: 406
+  max: 1000
+  severidade: indefinida
+  porque: valor fora da faixa observada indica dominio novo ou unidade trocada
+- id: score_bureau.distribuicao
+  coluna: score_bureau
+  tipo: psi
+  bordas:
+  - 557.0
+  - 607.0
+  - 650.0
+  - 709.0
+  - 750.0
+  - 790.0
+  - 847.0
+  - 886.0
+  - 930.0
+  esperado:
+  - 0.00089233
+  - 0.00876922
+  - 0.03957771
+  - 0.19639025
+  - 0.25099004
+  - 0.24946592
+  - 0.20247267
+  - 0.04091278
+  - 0.00950418
+  - 0.00102489
+  esperado_medido: true
+  limite: 0.1
+  severidade: indefinida
+  porque: PSI por feature; agregado sobre o escore e pouco sensivel. Proporcoes esperadas medidas na base
+    de referencia, nao inferidas dos niveis dos quantis
+- id: saldo_atual.nulo
+  coluna: saldo_atual
+  tipo: proporcao
+  campo: taxa_de_nulo
+  p_ref: 0.0
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: tolerancia por teste de duas proporcoes com o n do lote novo
+- id: saldo_atual.faixa
+  coluna: saldo_atual
+  tipo: faixa
+  min: 0.85
+  max: 220353.82
+  severidade: indefinida
+  porque: valor fora da faixa observada indica dominio novo ou unidade trocada
+- id: saldo_atual.distribuicao
+  coluna: saldo_atual
+  tipo: psi
+  bordas:
+  - 47.35010748896122
+  - 154.95152490625097
+  - 382.89737215541226
+  - 1187.5610152524634
+  - 2430.9720633336274
+  - 4668.586356958592
+  - 11233.839448995692
+  - 20378.648042020657
+  - 40416.44016812767
+  esperado:
+  - 0.0010406
+  - 0.0090248
+  - 0.0400702
+  - 0.1997878
+  - 0.2502992
+  - 0.2496406
+  - 0.2004048
+  - 0.039795
+  - 0.009055
+  - 0.000882
+  esperado_medido: true
+  limite: 0.1
+  severidade: indefinida
+  porque: PSI por feature; agregado sobre o escore e pouco sensivel. Proporcoes esperadas medidas na base
+    de referencia, nao inferidas dos niveis dos quantis
+- id: limite.nulo
+  coluna: limite
+  tipo: proporcao
+  campo: taxa_de_nulo
+  p_ref: 0.0
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: tolerancia por teste de duas proporcoes com o n do lote novo
+- id: limite.faixa
+  coluna: limite
+  tipo: faixa
+  min: 374.09
+  max: 389735.65
+  severidade: indefinida
+  porque: valor fora da faixa observada indica dominio novo ou unidade trocada
+- id: limite.distribuicao
+  coluna: limite
+  tipo: psi
+  bordas:
+  - 664.5020189327865
+  - 1016.1074911123621
+  - 1695.7493559404766
+  - 3981.5433707349102
+  - 6908.494247416654
+  - 11654.871112872144
+  - 24666.444291100328
+  - 42113.881841269285
+  - 78152.98414176475
+  esperado:
+  - 0.0009998
+  - 0.0089852
+  - 0.0402202
+  - 0.2002282
+  - 0.2498284
+  - 0.2498666
+  - 0.1998568
+  - 0.040107
+  - 0.0089994
+  - 0.0009084
+  esperado_medido: true
+  limite: 0.1
+  severidade: indefinida
+  porque: PSI por feature; agregado sobre o escore e pouco sensivel. Proporcoes esperadas medidas na base
+    de referencia, nao inferidas dos niveis dos quantis
+- id: utilizacao.nulo
+  coluna: utilizacao
+  tipo: proporcao
+  campo: taxa_de_nulo
+  p_ref: 0.0
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: tolerancia por teste de duas proporcoes com o n do lote novo
+- id: utilizacao.faixa
+  coluna: utilizacao
+  tipo: faixa
+  min: -1.0
+  max: 0.9979
+  severidade: indefinida
+  porque: valor fora da faixa observada indica dominio novo ou unidade trocada
+- id: utilizacao.distribuicao
+  coluna: utilizacao
+  tipo: psi
+  bordas:
+  - -1.0
+  - 0.074878999485067
+  - 0.23297829614715757
+  - 0.3783040693550891
+  - 0.5387574568205633
+  - 0.748695250943725
+  - 0.8572083120350726
+  - 0.9349631620452298
+  esperado:
+  - 0.0
+  - 0.0498976
+  - 0.2001578
+  - 0.2495744
+  - 0.250516
+  - 0.1999322
+  - 0.0398214
+  - 0.009092
+  - 0.0010086
+  esperado_medido: true
+  limite: 0.1
+  severidade: indefinida
+  porque: PSI por feature; agregado sobre o escore e pouco sensivel. Proporcoes esperadas medidas na base
+    de referencia, nao inferidas dos niveis dos quantis
+- id: utilizacao.sentinela[-1.0]
+  coluna: utilizacao
+  tipo: sentinela
+  valor: -1.0
+  massa_ref: 0.019826
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: massa da sentinela nao deve crescer. O alvo presumivel e zero depois que a origem for corrigida,
+    mas quem decide isso e o dono do pipeline, nao o contrato
+- id: valor_fatura.nulo
+  coluna: valor_fatura
+  tipo: proporcao
+  campo: taxa_de_nulo
+  p_ref: 0.0910096
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: tolerancia por teste de duas proporcoes com o n do lote novo
+- id: valor_fatura.faixa
+  coluna: valor_fatura
+  tipo: faixa
+  min: 0.16
+  max: 152192.54
+  severidade: indefinida
+  porque: valor fora da faixa observada indica dominio novo ou unidade trocada
+- id: valor_fatura.distribuicao
+  coluna: valor_fatura
+  tipo: psi
+  bordas:
+  - 10.919497190564453
+  - 38.3947858616482
+  - 109.45589156780517
+  - 442.77796573506424
+  - 1073.9386166130287
+  - 2387.30698634811
+  - 6607.399906975992
+  - 12872.765822127209
+  - 26837.800827858006
+  esperado:
+  - 0.00102179
+  - 0.00909207
+  - 0.04015136
+  - 0.20014667
+  - 0.25002288
+  - 0.24967766
+  - 0.19981267
+  - 0.04021407
+  - 0.00894575
+  - 0.00091508
+  esperado_medido: true
+  limite: 0.1
+  severidade: indefinida
+  porque: PSI por feature; agregado sobre o escore e pouco sensivel. Proporcoes esperadas medidas na base
+    de referencia, nao inferidas dos niveis dos quantis
+- id: n_atrasos_12m.nulo
+  coluna: n_atrasos_12m
+  tipo: proporcao
+  campo: taxa_de_nulo
+  p_ref: 0.0
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: tolerancia por teste de duas proporcoes com o n do lote novo
+- id: n_atrasos_12m.faixa
+  coluna: n_atrasos_12m
+  tipo: faixa
+  min: 0
+  max: 9
+  severidade: indefinida
+  porque: valor fora da faixa observada indica dominio novo ou unidade trocada
+- id: n_atrasos_12m.distribuicao
+  coluna: n_atrasos_12m
+  tipo: psi
+  bordas:
+  - 0.0
+  - 1.0
+  - 2.0
+  - 3.0
+  - 4.0
+  esperado:
+  - 0.0
+  - 0.5488734
+  - 0.3290952
+  - 0.098954
+  - 0.0197148
+  - 0.0033626
+  esperado_medido: true
+  limite: 0.1
+  severidade: indefinida
+  porque: PSI por feature; agregado sobre o escore e pouco sensivel. Proporcoes esperadas medidas na base
+    de referencia, nao inferidas dos niveis dos quantis
+- id: tempo_relacionamento_meses.nulo
+  coluna: tempo_relacionamento_meses
+  tipo: proporcao
+  campo: taxa_de_nulo
+  p_ref: 0.0
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: tolerancia por teste de duas proporcoes com o n do lote novo
+- id: tempo_relacionamento_meses.faixa
+  coluna: tempo_relacionamento_meses
+  tipo: faixa
+  min: 1
+  max: 299
+  severidade: indefinida
+  porque: valor fora da faixa observada indica dominio novo ou unidade trocada
+- id: tempo_relacionamento_meses.distribuicao
+  coluna: tempo_relacionamento_meses
+  tipo: psi
+  bordas:
+  - 1.0
+  - 4.0
+  - 16.0
+  - 75.0
+  - 150.0
+  - 225.0
+  - 284.0
+  - 297.0
+  - 299.0
+  esperado:
+  - 0.0
+  - 0.0100452
+  - 0.0402308
+  - 0.1972066
+  - 0.2508194
+  - 0.2509864
+  - 0.1972088
+  - 0.0434852
+  - 0.0066802
+  - 0.0033374
+  esperado_medido: true
+  limite: 0.1
+  severidade: indefinida
+  porque: PSI por feature; agregado sobre o escore e pouco sensivel. Proporcoes esperadas medidas na base
+    de referencia, nao inferidas dos niveis dos quantis
+- id: dias_desde_ultimo_pgto.nulo
+  coluna: dias_desde_ultimo_pgto
+  tipo: proporcao
+  campo: taxa_de_nulo
+  p_ref: 0.0
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: tolerancia por teste de duas proporcoes com o n do lote novo
+- id: dias_desde_ultimo_pgto.faixa
+  coluna: dias_desde_ultimo_pgto
+  tipo: faixa
+  min: 0
+  max: 9999
+  severidade: indefinida
+  porque: valor fora da faixa observada indica dominio novo ou unidade trocada
+- id: dias_desde_ultimo_pgto.distribuicao
+  coluna: dias_desde_ultimo_pgto
+  tipo: psi
+  bordas:
+  - 0.0
+  - 4.0
+  - 22.0
+  - 45.0
+  - 68.0
+  - 86.0
+  - 89.0
+  - 9999.0
+  esperado:
+  - 0.0
+  - 0.0439652
+  - 0.1981458
+  - 0.2538006
+  - 0.2536136
+  - 0.1982648
+  - 0.0331716
+  - 0.0110158
+  - 0.0080226
+  esperado_medido: true
+  limite: 0.1
+  severidade: indefinida
+  porque: PSI por feature; agregado sobre o escore e pouco sensivel. Proporcoes esperadas medidas na base
+    de referencia, nao inferidas dos niveis dos quantis
+- id: dias_desde_ultimo_pgto.sentinela[9999.0]
+  coluna: dias_desde_ultimo_pgto
+  tipo: sentinela
+  valor: 9999.0
+  massa_ref: 0.0080226
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: massa da sentinela nao deve crescer. O alvo presumivel e zero depois que a origem for corrigida,
+    mas quem decide isso e o dono do pipeline, nao o contrato
+- id: qtd_produtos.nulo
+  coluna: qtd_produtos
+  tipo: proporcao
+  campo: taxa_de_nulo
+  p_ref: 0.0
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: tolerancia por teste de duas proporcoes com o n do lote novo
+- id: qtd_produtos.faixa
+  coluna: qtd_produtos
+  tipo: faixa
+  min: 0
+  max: 11
+  severidade: indefinida
+  porque: valor fora da faixa observada indica dominio novo ou unidade trocada
+- id: qtd_produtos.distribuicao
+  coluna: qtd_produtos
+  tipo: psi
+  bordas:
+  - 0.0
+  - 1.0
+  - 2.0
+  - 4.0
+  - 5.0
+  - 6.0
+  esperado:
+  - 0.0
+  - 0.2615618
+  - 0.3387626
+  - 0.3470598
+  - 0.0385846
+  - 0.0108892
+  - 0.003142
+  esperado_medido: true
+  limite: 0.1
+  severidade: indefinida
+  porque: PSI por feature; agregado sobre o escore e pouco sensivel. Proporcoes esperadas medidas na base
+    de referencia, nao inferidas dos niveis dos quantis
+- id: taxa_juros.nulo
+  coluna: taxa_juros
+  tipo: proporcao
+  campo: taxa_de_nulo
+  p_ref: 0.0
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: tolerancia por teste de duas proporcoes com o n do lote novo
+- id: taxa_juros.faixa
+  coluna: taxa_juros
+  tipo: faixa
+  min: -0.0422
+  max: 0.2785
+  severidade: indefinida
+  porque: valor fora da faixa observada indica dominio novo ou unidade trocada
+- id: taxa_juros.distribuicao
+  coluna: taxa_juros
+  tipo: psi
+  bordas:
+  - 0.02655133354995173
+  - 0.05028864059980429
+  - 0.0705890505540384
+  - 0.09975616676101587
+  - 0.11998017747886627
+  - 0.14025629946409546
+  - 0.1693623444450402
+  - 0.18983471288137033
+  - 0.21315720051900278
+  esperado:
+  - 0.0009146
+  - 0.0090294
+  - 0.0396394
+  - 0.200447
+  - 0.2494114
+  - 0.2506876
+  - 0.199926
+  - 0.039991
+  - 0.008985
+  - 0.0009686
+  esperado_medido: true
+  limite: 0.1
+  severidade: indefinida
+  porque: PSI por feature; agregado sobre o escore e pouco sensivel. Proporcoes esperadas medidas na base
+    de referencia, nao inferidas dos niveis dos quantis
+- id: uf.nulo
+  coluna: uf
+  tipo: proporcao
+  campo: taxa_de_nulo
+  p_ref: 0.0
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: tolerancia por teste de duas proporcoes com o n do lote novo
+- id: uf.niveis
+  coluna: uf
+  tipo: niveis
+  conhecidos:
+  - BA
+  - CE
+  - GO
+  - MA
+  - MG
+  - N/A
+  - PA
+  - PE
+  - PR
+  - RJ
+  - RS
+  - SC
+  - SP
+  severidade: indefinida
+  porque: nivel novo em producao quebra encoding treinado no historico
+- id: uf.sentinela[N/A]
+  coluna: uf
+  tipo: sentinela
+  valor: N/A
+  massa_ref: 0.0200156
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: massa da sentinela nao deve crescer. O alvo presumivel e zero depois que a origem for corrigida,
+    mas quem decide isso e o dono do pipeline, nao o contrato
+- id: produto.nulo
+  coluna: produto
+  tipo: proporcao
+  campo: taxa_de_nulo
+  p_ref: 0.0
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: tolerancia por teste de duas proporcoes com o n do lote novo
+- id: produto.niveis
+  coluna: produto
+  tipo: niveis
+  conhecidos:
+  - cheque_especial
+  - consignado
+  - parcelado
+  - rotativo
+  severidade: indefinida
+  porque: nivel novo em producao quebra encoding treinado no historico
+- id: canal.nulo
+  coluna: canal
+  tipo: proporcao
+  campo: taxa_de_nulo
+  p_ref: 0.0
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: tolerancia por teste de duas proporcoes com o n do lote novo
+- id: canal.niveis
+  coluna: canal
+  tipo: niveis
+  conhecidos:
+  - agencia
+  - app
+  - parceiro
+  - telefone
+  - web
+  severidade: indefinida
+  porque: nivel novo em producao quebra encoding treinado no historico
+- id: cep.nulo
+  coluna: cep
+  tipo: proporcao
+  campo: taxa_de_nulo
+  p_ref: 0.0
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: tolerancia por teste de duas proporcoes com o n do lote novo
+- id: possui_seguro.nulo
+  coluna: possui_seguro
+  tipo: proporcao
+  campo: taxa_de_nulo
+  p_ref: 0.0
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: tolerancia por teste de duas proporcoes com o n do lote novo
+- id: possui_seguro.niveis
+  coluna: possui_seguro
+  tipo: niveis
+  conhecidos:
+  - 'False'
+  - 'True'
+  severidade: indefinida
+  porque: nivel novo em producao quebra encoding treinado no historico
+- id: flag_pep.nulo
+  coluna: flag_pep
+  tipo: proporcao
+  campo: taxa_de_nulo
+  p_ref: 0.0
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: tolerancia por teste de duas proporcoes com o n do lote novo
+- id: flag_pep.niveis
+  coluna: flag_pep
+  tipo: niveis
+  conhecidos:
+  - 'False'
+  - 'True'
+  severidade: indefinida
+  porque: nivel novo em producao quebra encoding treinado no historico
+- id: versao_modelo.nulo
+  coluna: versao_modelo
+  tipo: proporcao
+  campo: taxa_de_nulo
+  p_ref: 0.0
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: tolerancia por teste de duas proporcoes com o n do lote novo
+- id: versao_modelo.niveis
+  coluna: versao_modelo
+  tipo: niveis
+  conhecidos:
+  - v3.1
+  severidade: indefinida
+  porque: nivel novo em producao quebra encoding treinado no historico
+- id: valor_recuperado.nulo
+  coluna: valor_recuperado
+  tipo: proporcao
+  campo: taxa_de_nulo
+  p_ref: 0.0
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: tolerancia por teste de duas proporcoes com o n do lote novo
+- id: valor_recuperado.faixa
+  coluna: valor_recuperado
+  tipo: faixa
+  min: 0.0
+  max: 89309.05
+  severidade: indefinida
+  porque: valor fora da faixa observada indica dominio novo ou unidade trocada
+- id: valor_recuperado.distribuicao
+  coluna: valor_recuperado
+  tipo: psi
+  bordas:
+  - 0.0
+  - 83.097358769549
+  - 1780.9433464631131
+  - 4395.337938627142
+  - 10423.105577524731
+  esperado:
+  - 0.0
+  - 0.7503884
+  - 0.1996644
+  - 0.0401056
+  - 0.0089546
+  - 0.000887
+  esperado_medido: true
+  limite: 0.1
+  severidade: indefinida
+  porque: PSI por feature; agregado sobre o escore e pouco sensivel. Proporcoes esperadas medidas na base
+    de referencia, nao inferidas dos niveis dos quantis
+- id: n_acionamentos_cobranca.nulo
+  coluna: n_acionamentos_cobranca
+  tipo: proporcao
+  campo: taxa_de_nulo
+  p_ref: 0.0
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: tolerancia por teste de duas proporcoes com o n do lote novo
+- id: n_acionamentos_cobranca.faixa
+  coluna: n_acionamentos_cobranca
+  tipo: faixa
+  min: 0
+  max: 14
+  severidade: indefinida
+  porque: valor fora da faixa observada indica dominio novo ou unidade trocada
+- id: n_acionamentos_cobranca.distribuicao
+  coluna: n_acionamentos_cobranca
+  tipo: psi
+  bordas:
+  - 0.0
+  - 2.0
+  - 12.0
+  - 14.0
+  esperado:
+  - 0.0
+  - 0.7418932
+  - 0.1987048
+  - 0.0396056
+  - 0.0197964
+  esperado_medido: true
+  limite: 0.1
+  severidade: indefinida
+  porque: PSI por feature; agregado sobre o escore e pouco sensivel. Proporcoes esperadas medidas na base
+    de referencia, nao inferidas dos niveis dos quantis
+- id: score.nulo
+  coluna: score
+  tipo: proporcao
+  campo: taxa_de_nulo
+  p_ref: 0.0
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: tolerancia por teste de duas proporcoes com o n do lote novo
+- id: score.faixa
+  coluna: score
+  tipo: faixa
+  min: 0.001
+  max: 0.999
+  severidade: indefinida
+  porque: valor fora da faixa observada indica dominio novo ou unidade trocada
+- id: score.distribuicao
+  coluna: score
+  tipo: psi
+  bordas:
+  - 0.001
+  - 0.0031719266537784912
+  - 0.10825718763950584
+  - 0.22679596668128524
+  - 0.41152694837916914
+  - 0.7197624353839086
+  - 0.8766333715466944
+  - 0.9869048799449874
+  esperado:
+  - 0.0
+  - 0.0512812
+  - 0.1988732
+  - 0.2501924
+  - 0.249678
+  - 0.2000614
+  - 0.0398146
+  - 0.0089496
+  - 0.0011496
+  esperado_medido: true
+  limite: 0.1
+  severidade: indefinida
+  porque: PSI por feature; agregado sobre o escore e pouco sensivel. Proporcoes esperadas medidas na base
+    de referencia, nao inferidas dos niveis dos quantis
+- id: inadimplente.nulo
+  coluna: inadimplente
+  tipo: proporcao
+  campo: taxa_de_nulo
+  p_ref: 0.0
+  n_ref: 5000000
+  efeito_minimo: 0.005
+  severidade: indefinida
+  porque: tolerancia por teste de duas proporcoes com o n do lote novo
+- id: inadimplente.faixa
+  coluna: inadimplente
+  tipo: faixa
+  min: 0
+  max: 1
+  severidade: indefinida
+  porque: valor fora da faixa observada indica dominio novo ou unidade trocada

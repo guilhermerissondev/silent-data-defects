@@ -1,0 +1,893 @@
+[
+  {
+    "achado": {
+      "coluna": "score_bureau",
+      "detector": "D3",
+      "tipo": "nulo_por_tempo",
+      "valor": null,
+      "massa": 0.3874482,
+      "confianca": 0.97,
+      "evidencia": {
+        "coluna_tempo": "data_ref",
+        "corte": "2025-04-01",
+        "taxa_antes": 0.0199,
+        "taxa_depois": 1.0,
+        "salto": 0.9801,
+        "buckets": 24
+      },
+      "nota": "taxa de nulo salta de 2.0% para 100.0% em 2025-04-01; nao e uma coluna com 39% de nulos, e uma quebra de origem"
+    },
+    "impacto": {
+      "nivel": "B",
+      "sub": "B2_exposicao",
+      "metrica": "P(defeito E perto da fronteira)",
+      "valor": 0.0387764,
+      "massa_afetada": 0.387448,
+      "afetados_na_margem": 0.100082,
+      "taxa_base_na_margem": 0.1,
+      "lift_na_margem": 1.001,
+      "fronteira": {
+        "tipo": "corte",
+        "coluna": "score",
+        "cortes": [
+          0.7
+        ],
+        "percentil_do_corte": 0.942483,
+        "banda_percentil": [
+          0.892483,
+          0.992483
+        ],
+        "banda_valor": [
+          0.59642,
+          0.8961
+        ],
+        "taxa_base_na_margem": 0.1
+      },
+      "significa": "3.88% das linhas tem o defeito E estao na margem da decisao. E LIMITE SUPERIOR das decisoes que poderiam inverter, nao taxa de inversao — propagar o defeito ate a decisao exige o modelo (nivel C)"
+    },
+    "nivel_a": {
+      "nivel": "A",
+      "metrica": "massa x alavancagem",
+      "valor": 0.22585789,
+      "massa": 0.387448,
+      "alavancagem": 0.582937,
+      "auc": 0.208531,
+      "significa": "ordem relativa entre defeitos, nada mais. NAO e percentual de decisao alterada"
+    },
+    "nivel_b": {
+      "nivel": "B",
+      "sub": "B2_exposicao",
+      "metrica": "P(defeito E perto da fronteira)",
+      "valor": 0.0387764,
+      "massa_afetada": 0.387448,
+      "afetados_na_margem": 0.100082,
+      "taxa_base_na_margem": 0.1,
+      "lift_na_margem": 1.001,
+      "fronteira": {
+        "tipo": "corte",
+        "coluna": "score",
+        "cortes": [
+          0.7
+        ],
+        "percentil_do_corte": 0.942483,
+        "banda_percentil": [
+          0.892483,
+          0.992483
+        ],
+        "banda_valor": [
+          0.59642,
+          0.8961
+        ],
+        "taxa_base_na_margem": 0.1
+      },
+      "significa": "3.88% das linhas tem o defeito E estao na margem da decisao. E LIMITE SUPERIOR das decisoes que poderiam inverter, nao taxa de inversao — propagar o defeito ate a decisao exige o modelo (nivel C)"
+    }
+  },
+  {
+    "achado": {
+      "coluna": "valor_recuperado",
+      "detector": "D1",
+      "tipo": "massa_pontual_em_continua",
+      "valor": 0.0,
+      "massa": 0.7220922,
+      "confianca": 0.9,
+      "evidencia": {
+        "lift": 251306.9,
+        "amplitude_suporte": 89309.04000000001,
+        "ndv": 348026,
+        "ndv_exato": true,
+        "rota": "continua",
+        "gap_ratio": 1.1e-07,
+        "limiar": 0.005,
+        "vizinho_mais_proximo": 0.01
+      },
+      "nota": "massa pontual de 72.21% em coluna continua (lift 251,307x), mas colada no suporte: distribuicao mista, nao sentinela"
+    },
+    "impacto": {
+      "nivel": "B",
+      "sub": "B2_exposicao",
+      "metrica": "P(defeito E perto da fronteira)",
+      "valor": 0.0303932,
+      "massa_afetada": 0.722092,
+      "afetados_na_margem": 0.04209,
+      "taxa_base_na_margem": 0.1,
+      "lift_na_margem": 0.421,
+      "fronteira": {
+        "tipo": "corte",
+        "coluna": "score",
+        "cortes": [
+          0.7
+        ],
+        "percentil_do_corte": 0.942483,
+        "banda_percentil": [
+          0.892483,
+          0.992483
+        ],
+        "banda_valor": [
+          0.59642,
+          0.8961
+        ],
+        "taxa_base_na_margem": 0.1
+      },
+      "significa": "3.04% das linhas tem o defeito E estao na margem da decisao. E LIMITE SUPERIOR das decisoes que poderiam inverter, nao taxa de inversao — propagar o defeito ate a decisao exige o modelo (nivel C)"
+    },
+    "nivel_a": {
+      "nivel": "A",
+      "metrica": "massa x alavancagem",
+      "valor": 0.72208715,
+      "massa": 0.722092,
+      "alavancagem": 0.999993,
+      "auc": 0.999996,
+      "significa": "ordem relativa entre defeitos, nada mais. NAO e percentual de decisao alterada"
+    },
+    "nivel_b": {
+      "nivel": "B",
+      "sub": "B2_exposicao",
+      "metrica": "P(defeito E perto da fronteira)",
+      "valor": 0.0303932,
+      "massa_afetada": 0.722092,
+      "afetados_na_margem": 0.04209,
+      "taxa_base_na_margem": 0.1,
+      "lift_na_margem": 0.421,
+      "fronteira": {
+        "tipo": "corte",
+        "coluna": "score",
+        "cortes": [
+          0.7
+        ],
+        "percentil_do_corte": 0.942483,
+        "banda_percentil": [
+          0.892483,
+          0.992483
+        ],
+        "banda_valor": [
+          0.59642,
+          0.8961
+        ],
+        "taxa_base_na_margem": 0.1
+      },
+      "significa": "3.04% das linhas tem o defeito E estao na margem da decisao. E LIMITE SUPERIOR das decisoes que poderiam inverter, nao taxa de inversao — propagar o defeito ate a decisao exige o modelo (nivel C)"
+    }
+  },
+  {
+    "achado": {
+      "coluna": "utilizacao",
+      "detector": "D1",
+      "tipo": "sentinela_numerica",
+      "valor": -1.0,
+      "massa": 0.019826,
+      "confianca": 0.97,
+      "evidencia": {
+        "rota": "continua",
+        "gap_ratio": 1.002305,
+        "limiar": 0.005,
+        "vizinho_mais_proximo": 0.0001,
+        "distancia": 1.0001,
+        "escala": 0.9978,
+        "reforcos": [
+          "constante_canonica",
+          "no_minimo"
+        ],
+        "lift": 196.0,
+        "amplitude_suporte": 0.9978,
+        "ndv": 9888,
+        "ndv_exato": true
+      },
+      "nota": "ponto isolado: vizinho mais proximo 0.0001, a 100.23% da amplitude do suporte (1); tratar como ausente afeta 1.98% das linhas"
+    },
+    "impacto": {
+      "nivel": "B",
+      "sub": "B2_exposicao",
+      "metrica": "P(defeito E perto da fronteira)",
+      "valor": 0.0161876,
+      "massa_afetada": 0.019826,
+      "afetados_na_margem": 0.816483,
+      "taxa_base_na_margem": 0.1,
+      "lift_na_margem": 8.165,
+      "fronteira": {
+        "tipo": "corte",
+        "coluna": "score",
+        "cortes": [
+          0.7
+        ],
+        "percentil_do_corte": 0.942483,
+        "banda_percentil": [
+          0.892483,
+          0.992483
+        ],
+        "banda_valor": [
+          0.59642,
+          0.8961
+        ],
+        "taxa_base_na_margem": 0.1
+      },
+      "significa": "1.62% das linhas tem o defeito E estao na margem da decisao. E LIMITE SUPERIOR das decisoes que poderiam inverter, nao taxa de inversao — propagar o defeito ate a decisao exige o modelo (nivel C)"
+    },
+    "nivel_a": {
+      "nivel": "A",
+      "metrica": "massa x alavancagem",
+      "valor": 0.0017525,
+      "massa": 0.019826,
+      "alavancagem": 0.088394,
+      "auc": 0.544197,
+      "significa": "ordem relativa entre defeitos, nada mais. NAO e percentual de decisao alterada"
+    },
+    "nivel_b": {
+      "nivel": "B",
+      "sub": "B2_exposicao",
+      "metrica": "P(defeito E perto da fronteira)",
+      "valor": 0.0161876,
+      "massa_afetada": 0.019826,
+      "afetados_na_margem": 0.816483,
+      "taxa_base_na_margem": 0.1,
+      "lift_na_margem": 8.165,
+      "fronteira": {
+        "tipo": "corte",
+        "coluna": "score",
+        "cortes": [
+          0.7
+        ],
+        "percentil_do_corte": 0.942483,
+        "banda_percentil": [
+          0.892483,
+          0.992483
+        ],
+        "banda_valor": [
+          0.59642,
+          0.8961
+        ],
+        "taxa_base_na_margem": 0.1
+      },
+      "significa": "1.62% das linhas tem o defeito E estao na margem da decisao. E LIMITE SUPERIOR das decisoes que poderiam inverter, nao taxa de inversao — propagar o defeito ate a decisao exige o modelo (nivel C)"
+    }
+  },
+  {
+    "achado": {
+      "coluna": "valor_fatura",
+      "detector": "D3",
+      "tipo": "nulo_por_categoria",
+      "valor": null,
+      "massa": 0.0910096,
+      "confianca": 0.743,
+      "evidencia": {
+        "coluna_recorte": "produto",
+        "nivel_alto": "consignado",
+        "taxa_alto": 0.5496,
+        "nivel_baixo": "rotativo",
+        "taxa_baixo": 0.0099,
+        "spread": 0.5397
+      },
+      "nota": "nulo concentrado em produto = 'consignado' (55.0%) contra 1.0% em 'rotativo'"
+    },
+    "impacto": {
+      "nivel": "B",
+      "sub": "B2_exposicao",
+      "metrica": "P(defeito E perto da fronteira)",
+      "valor": 0.0090878,
+      "massa_afetada": 0.09101,
+      "afetados_na_margem": 0.099855,
+      "taxa_base_na_margem": 0.1,
+      "lift_na_margem": 0.999,
+      "fronteira": {
+        "tipo": "corte",
+        "coluna": "score",
+        "cortes": [
+          0.7
+        ],
+        "percentil_do_corte": 0.942483,
+        "banda_percentil": [
+          0.892483,
+          0.992483
+        ],
+        "banda_valor": [
+          0.59642,
+          0.8961
+        ],
+        "taxa_base_na_margem": 0.1
+      },
+      "significa": "0.91% das linhas tem o defeito E estao na margem da decisao. E LIMITE SUPERIOR das decisoes que poderiam inverter, nao taxa de inversao — propagar o defeito ate a decisao exige o modelo (nivel C)"
+    },
+    "nivel_a": {
+      "nivel": "A",
+      "metrica": "massa x alavancagem",
+      "valor": 0.00062241,
+      "massa": 0.09101,
+      "alavancagem": 0.006839,
+      "auc": 0.503419,
+      "significa": "ordem relativa entre defeitos, nada mais. NAO e percentual de decisao alterada"
+    },
+    "nivel_b": {
+      "nivel": "B",
+      "sub": "B2_exposicao",
+      "metrica": "P(defeito E perto da fronteira)",
+      "valor": 0.0090878,
+      "massa_afetada": 0.09101,
+      "afetados_na_margem": 0.099855,
+      "taxa_base_na_margem": 0.1,
+      "lift_na_margem": 0.999,
+      "fronteira": {
+        "tipo": "corte",
+        "coluna": "score",
+        "cortes": [
+          0.7
+        ],
+        "percentil_do_corte": 0.942483,
+        "banda_percentil": [
+          0.892483,
+          0.992483
+        ],
+        "banda_valor": [
+          0.59642,
+          0.8961
+        ],
+        "taxa_base_na_margem": 0.1
+      },
+      "significa": "0.91% das linhas tem o defeito E estao na margem da decisao. E LIMITE SUPERIOR das decisoes que poderiam inverter, nao taxa de inversao — propagar o defeito ate a decisao exige o modelo (nivel C)"
+    }
+  },
+  {
+    "achado": {
+      "coluna": "renda",
+      "detector": "D1",
+      "tipo": "sentinela_numerica",
+      "valor": -999.0,
+      "massa": 0.0309886,
+      "confianca": 0.97,
+      "evidencia": {
+        "rota": "continua",
+        "gap_ratio": 0.014563,
+        "limiar": 0.005,
+        "vizinho_mais_proximo": 878.09,
+        "distancia": 1877.0900000000001,
+        "escala": 128895.85,
+        "reforcos": [
+          "constante_canonica",
+          "no_minimo"
+        ],
+        "lift": 33526.9,
+        "amplitude_suporte": 128895.85,
+        "ndv": 1081910,
+        "ndv_exato": true
+      },
+      "nota": "ponto isolado: vizinho mais proximo 878.09, a 1.46% da amplitude do suporte (128,896); tratar como ausente afeta 3.10% das linhas"
+    },
+    "impacto": {
+      "nivel": "B",
+      "sub": "B2_exposicao",
+      "metrica": "P(defeito E perto da fronteira)",
+      "valor": 0.003121,
+      "massa_afetada": 0.030989,
+      "afetados_na_margem": 0.100714,
+      "taxa_base_na_margem": 0.1,
+      "lift_na_margem": 1.007,
+      "fronteira": {
+        "tipo": "corte",
+        "coluna": "score",
+        "cortes": [
+          0.7
+        ],
+        "percentil_do_corte": 0.942483,
+        "banda_percentil": [
+          0.892483,
+          0.992483
+        ],
+        "banda_valor": [
+          0.59642,
+          0.8961
+        ],
+        "taxa_base_na_margem": 0.1
+      },
+      "significa": "0.31% das linhas tem o defeito E estao na margem da decisao. E LIMITE SUPERIOR das decisoes que poderiam inverter, nao taxa de inversao — propagar o defeito ate a decisao exige o modelo (nivel C)"
+    },
+    "nivel_a": {
+      "nivel": "A",
+      "metrica": "massa x alavancagem",
+      "valor": 0.00337041,
+      "massa": 0.030989,
+      "alavancagem": 0.108763,
+      "auc": 0.445619,
+      "significa": "ordem relativa entre defeitos, nada mais. NAO e percentual de decisao alterada"
+    },
+    "nivel_b": {
+      "nivel": "B",
+      "sub": "B2_exposicao",
+      "metrica": "P(defeito E perto da fronteira)",
+      "valor": 0.003121,
+      "massa_afetada": 0.030989,
+      "afetados_na_margem": 0.100714,
+      "taxa_base_na_margem": 0.1,
+      "lift_na_margem": 1.007,
+      "fronteira": {
+        "tipo": "corte",
+        "coluna": "score",
+        "cortes": [
+          0.7
+        ],
+        "percentil_do_corte": 0.942483,
+        "banda_percentil": [
+          0.892483,
+          0.992483
+        ],
+        "banda_valor": [
+          0.59642,
+          0.8961
+        ],
+        "taxa_base_na_margem": 0.1
+      },
+      "significa": "0.31% das linhas tem o defeito E estao na margem da decisao. E LIMITE SUPERIOR das decisoes que poderiam inverter, nao taxa de inversao — propagar o defeito ate a decisao exige o modelo (nivel C)"
+    }
+  },
+  {
+    "achado": {
+      "coluna": "uf",
+      "detector": "D2",
+      "tipo": "sentinela_textual",
+      "valor": "N/A",
+      "massa": 0.0200156,
+      "confianca": 0.9,
+      "evidencia": {
+        "metodo": "tabela_de_consulta"
+      },
+      "nota": "codigo textual de ausencia em 2.00% das linhas"
+    },
+    "impacto": {
+      "nivel": "B",
+      "sub": "B2_exposicao",
+      "metrica": "P(defeito E perto da fronteira)",
+      "valor": 0.0019798,
+      "massa_afetada": 0.020016,
+      "afetados_na_margem": 0.098913,
+      "taxa_base_na_margem": 0.1,
+      "lift_na_margem": 0.989,
+      "fronteira": {
+        "tipo": "corte",
+        "coluna": "score",
+        "cortes": [
+          0.7
+        ],
+        "percentil_do_corte": 0.942483,
+        "banda_percentil": [
+          0.892483,
+          0.992483
+        ],
+        "banda_valor": [
+          0.59642,
+          0.8961
+        ],
+        "taxa_base_na_margem": 0.1
+      },
+      "significa": "0.20% das linhas tem o defeito E estao na margem da decisao. E LIMITE SUPERIOR das decisoes que poderiam inverter, nao taxa de inversao — propagar o defeito ate a decisao exige o modelo (nivel C)"
+    },
+    "nivel_a": {
+      "nivel": "A",
+      "metrica": "massa x alavancagem",
+      "valor": 3.611e-05,
+      "massa": 0.020016,
+      "alavancagem": 0.001804,
+      "auc": 0.500902,
+      "significa": "ordem relativa entre defeitos, nada mais. NAO e percentual de decisao alterada"
+    },
+    "nivel_b": {
+      "nivel": "B",
+      "sub": "B2_exposicao",
+      "metrica": "P(defeito E perto da fronteira)",
+      "valor": 0.0019798,
+      "massa_afetada": 0.020016,
+      "afetados_na_margem": 0.098913,
+      "taxa_base_na_margem": 0.1,
+      "lift_na_margem": 0.989,
+      "fronteira": {
+        "tipo": "corte",
+        "coluna": "score",
+        "cortes": [
+          0.7
+        ],
+        "percentil_do_corte": 0.942483,
+        "banda_percentil": [
+          0.892483,
+          0.992483
+        ],
+        "banda_valor": [
+          0.59642,
+          0.8961
+        ],
+        "taxa_base_na_margem": 0.1
+      },
+      "significa": "0.20% das linhas tem o defeito E estao na margem da decisao. E LIMITE SUPERIOR das decisoes que poderiam inverter, nao taxa de inversao — propagar o defeito ate a decisao exige o modelo (nivel C)"
+    }
+  },
+  {
+    "achado": {
+      "coluna": "data_nascimento",
+      "detector": "D2",
+      "tipo": "sentinela_temporal",
+      "valor": "1900-01-01",
+      "massa": 0.0150072,
+      "confianca": 0.9,
+      "evidencia": {
+        "metodo": "tabela_de_consulta",
+        "no_extremo": true
+      },
+      "nota": "data sentinela em 1.50% das linhas"
+    },
+    "impacto": {
+      "nivel": "B",
+      "sub": "B2_exposicao",
+      "metrica": "P(defeito E perto da fronteira)",
+      "valor": 0.001504,
+      "massa_afetada": 0.015007,
+      "afetados_na_margem": 0.100219,
+      "taxa_base_na_margem": 0.1,
+      "lift_na_margem": 1.002,
+      "fronteira": {
+        "tipo": "corte",
+        "coluna": "score",
+        "cortes": [
+          0.7
+        ],
+        "percentil_do_corte": 0.942483,
+        "banda_percentil": [
+          0.892483,
+          0.992483
+        ],
+        "banda_valor": [
+          0.59642,
+          0.8961
+        ],
+        "taxa_base_na_margem": 0.1
+      },
+      "significa": "0.15% das linhas tem o defeito E estao na margem da decisao. E LIMITE SUPERIOR das decisoes que poderiam inverter, nao taxa de inversao — propagar o defeito ate a decisao exige o modelo (nivel C)"
+    },
+    "nivel_a": {
+      "nivel": "A",
+      "metrica": "massa x alavancagem",
+      "valor": 1.2e-07,
+      "massa": 0.015007,
+      "alavancagem": 8e-06,
+      "auc": 0.499996,
+      "significa": "ordem relativa entre defeitos, nada mais. NAO e percentual de decisao alterada"
+    },
+    "nivel_b": {
+      "nivel": "B",
+      "sub": "B2_exposicao",
+      "metrica": "P(defeito E perto da fronteira)",
+      "valor": 0.001504,
+      "massa_afetada": 0.015007,
+      "afetados_na_margem": 0.100219,
+      "taxa_base_na_margem": 0.1,
+      "lift_na_margem": 1.002,
+      "fronteira": {
+        "tipo": "corte",
+        "coluna": "score",
+        "cortes": [
+          0.7
+        ],
+        "percentil_do_corte": 0.942483,
+        "banda_percentil": [
+          0.892483,
+          0.992483
+        ],
+        "banda_valor": [
+          0.59642,
+          0.8961
+        ],
+        "taxa_base_na_margem": 0.1
+      },
+      "significa": "0.15% das linhas tem o defeito E estao na margem da decisao. E LIMITE SUPERIOR das decisoes que poderiam inverter, nao taxa de inversao — propagar o defeito ate a decisao exige o modelo (nivel C)"
+    }
+  },
+  {
+    "achado": {
+      "coluna": "idade",
+      "detector": "D1",
+      "tipo": "sentinela_numerica",
+      "valor": 0.0,
+      "massa": 0.011983,
+      "confianca": 0.91,
+      "evidencia": {
+        "rota": "discreta",
+        "gap_ratio": 18.0,
+        "limiar": 8.0,
+        "vizinho_mais_proximo": 18.0,
+        "distancia": 18.0,
+        "escala": 1.0,
+        "reforcos": [
+          "no_minimo"
+        ],
+        "espacamento_mediano": 1.0,
+        "ndv": 79,
+        "quantis_sem_candidato": {
+          "p01": 18.0,
+          "p25": 37.0,
+          "p50": 56.0,
+          "p75": 76.0,
+          "p99": 95.0
+        }
+      },
+      "nota": "ponto isolado: vizinho mais proximo 18.0, a 18x o espacamento tipico entre valores (1); tratar como ausente afeta 1.20% das linhas"
+    },
+    "impacto": {
+      "nivel": "B",
+      "sub": "B2_exposicao",
+      "metrica": "P(defeito E perto da fronteira)",
+      "valor": 0.0012172,
+      "massa_afetada": 0.011983,
+      "afetados_na_margem": 0.101577,
+      "taxa_base_na_margem": 0.1,
+      "lift_na_margem": 1.016,
+      "fronteira": {
+        "tipo": "corte",
+        "coluna": "score",
+        "cortes": [
+          0.7
+        ],
+        "percentil_do_corte": 0.942483,
+        "banda_percentil": [
+          0.892483,
+          0.992483
+        ],
+        "banda_valor": [
+          0.59642,
+          0.8961
+        ],
+        "taxa_base_na_margem": 0.1
+      },
+      "significa": "0.12% das linhas tem o defeito E estao na margem da decisao. E LIMITE SUPERIOR das decisoes que poderiam inverter, nao taxa de inversao — propagar o defeito ate a decisao exige o modelo (nivel C)"
+    },
+    "nivel_a": {
+      "nivel": "A",
+      "metrica": "massa x alavancagem",
+      "valor": 7.7e-07,
+      "massa": 0.011983,
+      "alavancagem": 6.4e-05,
+      "auc": 0.499968,
+      "significa": "ordem relativa entre defeitos, nada mais. NAO e percentual de decisao alterada"
+    },
+    "nivel_b": {
+      "nivel": "B",
+      "sub": "B2_exposicao",
+      "metrica": "P(defeito E perto da fronteira)",
+      "valor": 0.0012172,
+      "massa_afetada": 0.011983,
+      "afetados_na_margem": 0.101577,
+      "taxa_base_na_margem": 0.1,
+      "lift_na_margem": 1.016,
+      "fronteira": {
+        "tipo": "corte",
+        "coluna": "score",
+        "cortes": [
+          0.7
+        ],
+        "percentil_do_corte": 0.942483,
+        "banda_percentil": [
+          0.892483,
+          0.992483
+        ],
+        "banda_valor": [
+          0.59642,
+          0.8961
+        ],
+        "taxa_base_na_margem": 0.1
+      },
+      "significa": "0.12% das linhas tem o defeito E estao na margem da decisao. E LIMITE SUPERIOR das decisoes que poderiam inverter, nao taxa de inversao — propagar o defeito ate a decisao exige o modelo (nivel C)"
+    }
+  },
+  {
+    "achado": {
+      "coluna": "dias_desde_ultimo_pgto",
+      "detector": "D1",
+      "tipo": "sentinela_numerica",
+      "valor": 9999.0,
+      "massa": 0.0080226,
+      "confianca": 0.97,
+      "evidencia": {
+        "rota": "discreta",
+        "gap_ratio": 9910.0,
+        "limiar": 8.0,
+        "vizinho_mais_proximo": 89.0,
+        "distancia": 9910.0,
+        "escala": 1.0,
+        "reforcos": [
+          "constante_canonica",
+          "no_maximo"
+        ],
+        "espacamento_mediano": 1.0,
+        "ndv": 91,
+        "quantis_sem_candidato": {
+          "p01": 0.0,
+          "p25": 22.0,
+          "p50": 45.0,
+          "p75": 67.0,
+          "p99": 89.0
+        }
+      },
+      "nota": "ponto isolado: vizinho mais proximo 89.0, a 9,910x o espacamento tipico entre valores (1); tratar como ausente afeta 0.80% das linhas"
+    },
+    "impacto": {
+      "nivel": "B",
+      "sub": "B2_exposicao",
+      "metrica": "P(defeito E perto da fronteira)",
+      "valor": 0.0008024,
+      "massa_afetada": 0.008023,
+      "afetados_na_margem": 0.100017,
+      "taxa_base_na_margem": 0.1,
+      "lift_na_margem": 1.0,
+      "fronteira": {
+        "tipo": "corte",
+        "coluna": "score",
+        "cortes": [
+          0.7
+        ],
+        "percentil_do_corte": 0.942483,
+        "banda_percentil": [
+          0.892483,
+          0.992483
+        ],
+        "banda_valor": [
+          0.59642,
+          0.8961
+        ],
+        "taxa_base_na_margem": 0.1
+      },
+      "significa": "0.08% das linhas tem o defeito E estao na margem da decisao. E LIMITE SUPERIOR das decisoes que poderiam inverter, nao taxa de inversao — propagar o defeito ate a decisao exige o modelo (nivel C)"
+    },
+    "nivel_a": {
+      "nivel": "A",
+      "metrica": "massa x alavancagem",
+      "valor": 7.69e-06,
+      "massa": 0.008023,
+      "alavancagem": 0.000959,
+      "auc": 0.499521,
+      "significa": "ordem relativa entre defeitos, nada mais. NAO e percentual de decisao alterada"
+    },
+    "nivel_b": {
+      "nivel": "B",
+      "sub": "B2_exposicao",
+      "metrica": "P(defeito E perto da fronteira)",
+      "valor": 0.0008024,
+      "massa_afetada": 0.008023,
+      "afetados_na_margem": 0.100017,
+      "taxa_base_na_margem": 0.1,
+      "lift_na_margem": 1.0,
+      "fronteira": {
+        "tipo": "corte",
+        "coluna": "score",
+        "cortes": [
+          0.7
+        ],
+        "percentil_do_corte": 0.942483,
+        "banda_percentil": [
+          0.892483,
+          0.992483
+        ],
+        "banda_valor": [
+          0.59642,
+          0.8961
+        ],
+        "taxa_base_na_margem": 0.1
+      },
+      "significa": "0.08% das linhas tem o defeito E estao na margem da decisao. E LIMITE SUPERIOR das decisoes que poderiam inverter, nao taxa de inversao — propagar o defeito ate a decisao exige o modelo (nivel C)"
+    }
+  },
+  {
+    "achado": {
+      "coluna": "score",
+      "detector": "D1",
+      "tipo": "massa_pontual_em_continua",
+      "valor": 0.001,
+      "massa": 0.0488182,
+      "confianca": 0.9,
+      "evidencia": {
+        "lift": 4829.0,
+        "amplitude_suporte": 0.99799,
+        "ndv": 98918,
+        "ndv_exato": true,
+        "rota": "continua",
+        "gap_ratio": 1.002e-05,
+        "limiar": 0.005,
+        "vizinho_mais_proximo": 0.00101
+      },
+      "nota": "massa pontual de 4.88% em coluna continua (lift 4,829x), mas colada no suporte: distribuicao mista, nao sentinela"
+    },
+    "impacto": {
+      "nivel": "B",
+      "sub": "B1_inversao_exata",
+      "metrica": "taxa de inversao de decisao",
+      "valor": 0.0,
+      "massa_afetada": 0.048818,
+      "reparo": "imputar pela mediana do restante (0.24057)",
+      "decisoes_invertidas": 0,
+      "fronteira": {
+        "tipo": "corte",
+        "coluna": "score",
+        "cortes": [
+          0.7
+        ],
+        "percentil_do_corte": 0.942483,
+        "banda_percentil": [
+          0.892483,
+          0.992483
+        ],
+        "banda_valor": [
+          0.59642,
+          0.8961
+        ],
+        "taxa_base_na_margem": 0.1
+      },
+      "significa": "0.0000% das linhas mudam de lado do corte 0.7 ao reparar o defeito. Exato: o defeito esta na propria coluna que decide, entao nao falta modelo nenhum"
+    },
+    "nivel_a": {
+      "nivel": "A",
+      "metrica": "massa x alavancagem",
+      "valor": 0.02726941,
+      "massa": 0.048818,
+      "alavancagem": 0.558591,
+      "auc": 0.779296,
+      "significa": "ordem relativa entre defeitos, nada mais. NAO e percentual de decisao alterada"
+    },
+    "nivel_b": {
+      "nivel": "B",
+      "sub": "B1_inversao_exata",
+      "metrica": "taxa de inversao de decisao",
+      "valor": 0.0,
+      "massa_afetada": 0.048818,
+      "reparo": "imputar pela mediana do restante (0.24057)",
+      "decisoes_invertidas": 0,
+      "fronteira": {
+        "tipo": "corte",
+        "coluna": "score",
+        "cortes": [
+          0.7
+        ],
+        "percentil_do_corte": 0.942483,
+        "banda_percentil": [
+          0.892483,
+          0.992483
+        ],
+        "banda_valor": [
+          0.59642,
+          0.8961
+        ],
+        "taxa_base_na_margem": 0.1
+      },
+      "significa": "0.0000% das linhas mudam de lado do corte 0.7 ao reparar o defeito. Exato: o defeito esta na propria coluna que decide, entao nao falta modelo nenhum"
+    }
+  },
+  {
+    "achado": {
+      "coluna": "versao_modelo",
+      "detector": "D0",
+      "tipo": "coluna_constante",
+      "valor": null,
+      "massa": null,
+      "confianca": 1.0,
+      "evidencia": {
+        "camada": 0
+      },
+      "nota": "min = max = 'v3.1'"
+    },
+    "impacto": null,
+    "nivel_a": null,
+    "nivel_b": null
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "checks": 72,
+  "cenario_1_falhas": [],
+  "cenario_2_falhas": [],
+  "cenario_2_tolerancia_fixa": [
+    "score_bureau.nulo: 38.8500% fora de [38.7021%, 38.7875%]",
+    "valor_fatura.nulo: 9.2200% fora de [9.0758%, 9.1262%]"
+  ],
+  "cenario_3_falhas": [
+    "idade.faixa",
+    "limite.presente",
+    "renda.sentinela[-999.0]",
+    "score_bureau.distribuicao",
+    "score_bureau.faixa",
+    "score_bureau.nulo",
+    "taxa_juros.distribuicao",
+    "taxa_juros.faixa",
+    "uf.niveis",
+    "valor_recuperado.faixa"
+  ],
+  "mudancas_perdidas": 0
+}

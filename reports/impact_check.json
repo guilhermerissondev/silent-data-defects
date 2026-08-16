@@ -1,0 +1,126 @@
+{
+  "por_massa": [
+    {
+      "achado": "valor_recuperado = 0.0",
+      "massa": 0.722092
+    },
+    {
+      "achado": "score_bureau",
+      "massa": 0.387448
+    },
+    {
+      "achado": "valor_fatura",
+      "massa": 0.09101
+    },
+    {
+      "achado": "score = 0.001",
+      "massa": 0.048818
+    },
+    {
+      "achado": "renda = -999.0",
+      "massa": 0.030989
+    },
+    {
+      "achado": "uf = 'N/A'",
+      "massa": 0.020016
+    },
+    {
+      "achado": "utilizacao = -1.0",
+      "massa": 0.019826
+    },
+    {
+      "achado": "data_nascimento = '1900-01-01'",
+      "massa": 0.015007
+    },
+    {
+      "achado": "idade = 0.0",
+      "massa": 0.011983
+    },
+    {
+      "achado": "dias_desde_ultimo_pgto = 9999.0",
+      "massa": 0.008023
+    }
+  ],
+  "por_impacto": [
+    {
+      "achado": "score_bureau",
+      "valor": 0.0387764,
+      "nivel": "B",
+      "sub": "B2_exposicao",
+      "lift": 1.001,
+      "deslocamento": 1
+    },
+    {
+      "achado": "valor_recuperado = 0.0",
+      "valor": 0.0303932,
+      "nivel": "B",
+      "sub": "B2_exposicao",
+      "lift": 0.421,
+      "deslocamento": -1
+    },
+    {
+      "achado": "utilizacao = -1.0",
+      "valor": 0.0161876,
+      "nivel": "B",
+      "sub": "B2_exposicao",
+      "lift": 8.165,
+      "deslocamento": 4
+    },
+    {
+      "achado": "valor_fatura",
+      "valor": 0.0090878,
+      "nivel": "B",
+      "sub": "B2_exposicao",
+      "lift": 0.999,
+      "deslocamento": -1
+    },
+    {
+      "achado": "renda = -999.0",
+      "valor": 0.003121,
+      "nivel": "B",
+      "sub": "B2_exposicao",
+      "lift": 1.007,
+      "deslocamento": 0
+    },
+    {
+      "achado": "uf = 'N/A'",
+      "valor": 0.0019798,
+      "nivel": "B",
+      "sub": "B2_exposicao",
+      "lift": 0.989,
+      "deslocamento": 0
+    },
+    {
+      "achado": "data_nascimento = '1900-01-01'",
+      "valor": 0.001504,
+      "nivel": "B",
+      "sub": "B2_exposicao",
+      "lift": 1.002,
+      "deslocamento": 1
+    },
+    {
+      "achado": "idade = 0.0",
+      "valor": 0.0012172,
+      "nivel": "B",
+      "sub": "B2_exposicao",
+      "lift": 1.016,
+      "deslocamento": 1
+    },
+    {
+      "achado": "dias_desde_ultimo_pgto = 9999.0",
+      "valor": 0.0008024,
+      "nivel": "B",
+      "sub": "B2_exposicao",
+      "lift": 1.0,
+      "deslocamento": 1
+    },
+    {
+      "achado": "score = 0.001",
+      "valor": 0.0,
+      "nivel": "B",
+      "sub": "B1_inversao_exata",
+      "lift": null,
+      "deslocamento": -6
+    }
+  ]
+}

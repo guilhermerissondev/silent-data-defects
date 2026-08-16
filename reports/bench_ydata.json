@@ -1,0 +1,98 @@
+[
+  {
+    "ok": true,
+    "read_s": 0.303,
+    "profile_s": 0.0,
+    "total_s": 0.3,
+    "queries": 0,
+    "wall_s": 0.46,
+    "peak_mb": 57.6,
+    "ferramenta": "sdd camada 0",
+    "linhas": 100000
+  },
+  {
+    "ok": true,
+    "read_s": 0.27,
+    "profile_s": 0.43,
+    "total_s": 0.7,
+    "queries": 20,
+    "wall_s": 0.85,
+    "peak_mb": 208.6,
+    "ferramenta": "sdd completo",
+    "linhas": 100000
+  },
+  {
+    "ok": true,
+    "read_s": 4.44,
+    "profile_s": 4.21,
+    "total_s": 8.65,
+    "wall_s": 16.77,
+    "peak_mb": 3673.5,
+    "ferramenta": "ydata minimal",
+    "linhas": 100000
+  },
+  {
+    "ok": true,
+    "read_s": 0.299,
+    "profile_s": 0.0,
+    "total_s": 0.3,
+    "queries": 0,
+    "wall_s": 0.44,
+    "peak_mb": 59.4,
+    "ferramenta": "sdd camada 0",
+    "linhas": 1000000
+  },
+  {
+    "ok": true,
+    "read_s": 0.229,
+    "profile_s": 0.89,
+    "total_s": 1.12,
+    "queries": 20,
+    "wall_s": 1.25,
+    "peak_mb": 221.2,
+    "ferramenta": "sdd completo",
+    "linhas": 1000000
+  },
+  {
+    "ok": true,
+    "read_s": 3.42,
+    "profile_s": 25.43,
+    "total_s": 28.85,
+    "wall_s": 36.16,
+    "peak_mb": 4296.7,
+    "ferramenta": "ydata minimal",
+    "linhas": 1000000
+  },
+  {
+    "ok": true,
+    "read_s": 0.269,
+    "profile_s": 0.0,
+    "total_s": 0.27,
+    "queries": 0,
+    "wall_s": 0.4,
+    "peak_mb": 60.6,
+    "ferramenta": "sdd camada 0",
+    "linhas": 5000000
+  },
+  {
+    "ok": true,
+    "read_s": 0.258,
+    "profile_s": 4.37,
+    "total_s": 4.63,
+    "queries": 20,
+    "wall_s": 4.8,
+    "peak_mb": 261.3,
+    "ferramenta": "sdd completo",
+    "linhas": 5000000
+  },
+  {
+    "ok": true,
+    "read_s": 3.53,
+    "profile_s": 106.9,
+    "total_s": 110.43,
+    "wall_s": 118.9,
+    "peak_mb": 6195.9,
+    "ferramenta": "ydata minimal",
+    "linhas": 5000000
+  }
+]
